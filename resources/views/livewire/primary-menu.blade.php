@@ -4,17 +4,31 @@
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center w-52">
                 <a class="inline-block h-20" href="/">
-                    <img src="/images/logo-yeniliktec.png" alt="Logo Yeniliktec" class="h-full">
+                    <img src="/images/logo_yeniliktec_blanco.svg" alt="Logo Yeniliktec" class="h-full">
                 </a>
             </div>
 
             <!-- Navigation Links -->
-            <div class="hidden space-x-8 sm:-my-px sm:ml-auto sm:flex uppercase">
+            <div class="hidden space-x-8 sm:-my-px md:ml-auto md:flex uppercase items-center">
                 <x-jet-nav-link
-                    class="text-white"
                     href="/"
                     :active="request()->routeIs('welcome')">
                     {{ __('Inicio') }}
+                </x-jet-nav-link>
+                <x-jet-nav-link
+                    href="/servicios"
+                    :active="request()->routeIs('services')">
+                    Servicios
+                </x-jet-nav-link>
+                <x-jet-nav-link
+                    href="/blog"
+                    :active="request()->routeIs('blog')">
+                    Blog
+                </x-jet-nav-link>
+                <x-jet-nav-link
+                    href="/contacto"
+                    :active="request()->routeIs('contact')">
+                    Contacto
                 </x-jet-nav-link>
             </div>
 
@@ -91,7 +105,7 @@
         @endif
 
         <!-- Hamburger -->
-        <div class="-mr-2 flex items-center sm:hidden">
+        <div class="-mr-2 flex items-center md:hidden">
             <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                 <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

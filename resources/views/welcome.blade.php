@@ -1,107 +1,129 @@
 <x-app-layout>
-    {{-- <livewire:carousel></livewire:carousel> --}}
+    @include('components.slider')
 
-    @include('slider')
+    <div class="container mx-auto text-center px-4">
+        <h1 class="text-xl my-4 hidden">YenilikTec</h1>
 
-    <div class="container mx-auto text-center">
-        <h1 class="text-xl my-4">YenilikTec</h1>
+        <h3 class="text-purple-900 font-bold text-4xl pt-8 my-10">TE AYUDAMOS A INTEGRARTE AL MUNDO DIGITAL</h3>
 
-        <h3>Servicios</h3>
+        <div class="border-b-8 border-purple-900 w-1/3 mx-auto"></div>
 
-        <p>
+        {{-- <p>
             Somos una agencia impulsada por la innovación y el conocimiento. Ayudamos a impulsar negocios en la era digital.
-        </p>
-        <p>
-            Nuestros servicios van orientados especialmente al desarrollo web que vallan alineados con los
-            objetivos de marketing digital del negocio, pensando así desde el inicio como serán las estructuras a
-            seguir tanto para las campañas de marketing como para el diseño y desarrollo de un sitio web que aumenten mas
-            la efectividad en cada una de las fases de conversión de un embudo de ventas para tu negocio.
-        </p>
+        </p> --}}
 
-        <div class="flex flex-wrap">
-            <div class="w-1/2">
-                <h4>Marketing Digital</h4>
-                <p>        
-                    ¿Creas campañas publicitarias pero no te funcionan como desearas? Mejor pide asesoría,
-                    podemos ayudarte para hacer que tengas campañas publicitarias efectivas para tu negocio.
-                </p>
+        {{-- <p>        
+            ¿Creas campañas publicitarias pero no te funcionan como desearas? Mejor pide asesoría,
+            podemos ayudarte para hacer que tengas campañas publicitarias efectivas para tu negocio.
+            Tener campañas de marketing digital para tu negocio, es de extrema importancia ya sea si vas empezando o no, todo negocio debe desarrollar una estrategia, por ello puedes preguntar por un plan personalizado que ayude a que crezca mas rápido tu negocio.
+            Inbound Marketing
+        </p> --}}
+
+        {{-- Si tienes un proyecto pendiente de un sitio web para tu negocio, no lo pospongas mas, tenemos servicios a
+                    tu medida para el desarrollo de tu E-Commerce o Sitio Web --}}
+        
+        {{-- Si necesitas crear todo un proceso automatizado de ventas y captación de clientes, para generar mayores ingresos en tu negocio por medio de un embudo de negocio, contáctanos porque te podemos orientar. --}}
+
+        <div class="flex flex-wrap justify-between items-center my-20">
+            <div class="md:w-1/3 text-2xl">
+                <img src="/images/marketing_digital.svg" alt="Marketing Digital">
+                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Marketing Digital</h4>
+                <p>Generación de contenido</p>
+                <p>Campañas en Google Ads</p>
+                <p>Campañas en Facebook Ads</p>
+                <p>Comunity Manager</p>
+                <p>Generación de contactos</p>
             </div>
-            <div class="w-1/2">
-                <h4>Desarrollo web</h4>
-                <p>        
-                    Si tienes un proyecto pendiente de un sitio web para tu negocio, no lo pospongas mas, tenemos servicios a
-                    tu medida para el desarrollo de tu E-Commerce o Sitio Web
-                </p>
+            <div class="md:w-1/3 text-2xl">
+                <img src="/images/desarrolloweb.svg" alt="Desarrollo web">
+                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Desarrollo web</h4>
+                <p>Páginas web</p>
+                <p>Tiendas en linea</p>
+                <p>Páginas de captura</p>
+                <p>Blogs</p>
+                <p>Sistemas web</p>
             </div>
-            <div class="w-1/2">
-                <h4>Marketing Digital & Desarrollo Web</h4>
-                <p>        
-                    Si necesitas crear todo un proceso automatizado de ventas y captación de clientes, para generar mayores ingresos en tu negocio por medio de un embudo de negocio, contáctanos porque te podemos orientar.
-                </p>
-            </div>
-            <div class="w-1/2">
-                <h4>Servicios  Desarrollo Web</h4>
-                <p>        
-                    Ya sea que busques desarrollar un sistema web a la medida o la creación de cualquier sitio web para tu restaurante, tienda, panadería, estética, salón de eventos etc. puedes comunicarte, para que te ofrecerte distintas soluciones para tu problema. 
-                </p>
-            </div>
-            <div class="w-1/2">
-                <h4>Nuevas Tecnologías</h4>
-                <p>        
-                    Estamos preparados para ofrecerte lo mejor en desarrollo web ya sea en la nube o hosting, utilizando React, View, NodeJs, PHP, JavaScrip, entre otros según sea el caso y tu preferencia.
-                    Especialistas
-                </p>
-            </div>
-            <div class="w-1/2">
-                <h4>Analitic's</h4>
-                <p>
-                    Contamos con equipo de monitoreo constante de métricas, para mejorar tu rendimiento, aprovechando al máximo las campañas de marketing.
-                </p>
-            </div>
-            <div class="w-1/2">
-                <h4>Servicios Marketing Digital</h4>
-                <p>
-                    Tener campañas de marketing digital para tu negocio, es de extrema importancia ya sea si vas empezando o no, todo negocio debe desarrollar una estrategia, por ello puedes preguntar por un plan personalizado que ayude a que crezca mas rápido tu negocio.
-                    Inbound Marketing
-                </p>
+            <div class="md:w-1/3 text-2xl">
+                <img src="/images/servicios_tecnologicos.svg" alt="Servicios Tecnológicos">
+                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Servicios Tecnológicos</h4>
+                <p>Administración de Base de Datos</p>
+                <p>Manejo de software de terceros</p>
+                <p>Administración de servidores</p>
+                <p>Soporte técnico</p>
             </div>
         </div>
+
+        <h3 class="my-10 text-2xl text-purple-900 font-bold">No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.</h3>
+        <p class="text-lg">Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.</p>
+        <p class="text-lg">Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.</p>
         
-        <h2>Beneficios</h2>
-        <p>
-            Equipo de desarrollo que constantemente esta investigando para ofrecer un servicio que este en la vanguardia con las nuevas tecnologías de desarrollo.
-            Tiempo de Entrega
+        <div class="my-10 text-2xl">
+            <h2 class="text-purple-900 uppercase font-bold text-4xl pt-8 my-10">Beneficios</h2>
+            <div class="border-b-8 border-purple-900 w-1/3 mx-auto mb-2"></div>
 
-            Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.
-            Soporte al Cliente
-
-            Soporte técnico 24/7 para que te sientas mas seguro y puedas comunicarte en caso de cualquier contingencia.
-
-            Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.
-            Especialistas
-
-            No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.
-        </p>
-    
-        <div class="flex" style="height: 100px">
-            <div class="w-1/3 h-3.5">Sitios Web</div>
-            <div class="w-1/3 h-3.5">Redes Sociales</div>
-            <div class="w-1/3 h-3.5">SEO Optimizaciones</div>
+            <div class="flex justify-between items-center">
+                <div class="text-left leading-relaxed">
+                    <p><span class="text-purple-800">&#10004;</span> Tiempo de Entrega</p>
+                    <p><span class="text-purple-800">&#10004;</span> Soporte al Cliente</p>
+                    <p><span class="text-purple-800">&#10004;</span> Soporte técnico 24/7</p>
+                    <p><span class="text-purple-800">&#10004;</span> Desarrollo web ultra rápido</p>
+                    <p><span class="text-purple-800">&#10004;</span> Servicio que está en la vanguardia con las nuevas tecnologías de desarrollo</p>
+                </div>
+                <div class="sm:w-1/2 hidden sm:block">
+                    <img src="/images/undraw_to_the_stars.svg" alt="To the stars">
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="contact bg-gray-600 py-4 text-white">
-        <div class="container m-auto">
-            <h3>CONTACTO</h3>
-    
-            Si tienes dudas acerca de los planes o paquetes o podemos ofrecerte, puedes contactarnos vía correo, whatsapp o directamente en nuestras redes sociales.
-    
-            Address
-            Cuernavaca Morelos
-            Phone
-            +52 777 344 7577
-            Email Address
-            contacto@yeniliktec.com
+    <div class="contact bg-gray-600 py-5 text-white">
+        <div class="container mx-4 m-auto">
+            <h3 class="uppercase text-2xl py-2">CONTACTO</h3>
+            <div class="border-b-4 border-white w-1/3"></div> 
+
+            <div class="flex flex-wrap mt-5">
+                <div class="md:w-1/2">
+                    <p>Si tienes dudas acerca de los planes o paquetes o podemos ofrecerte,</p>
+                    <p>puedes contactarnos vía correo, whatsapp o directamente en nuestras redes sociales.</p>
+                    <br><br>
+                    <p>Address: Cuernavaca Morelos</p>
+                    <p><a class="hover:underline" href="tel:+527773447577">Phone: +52 777 344 7577</a></p>
+                    <p><a class="hover:underline" href="mailto:contacto@yeniliktec.com">Email Address: contacto@yeniliktec.com</a></p>
+                </div>
+                <div id="contacto" class="md:w-1/2">
+                    @if(Session::has('success'))
+                        <div class="p-4 mb-2 text-green-900 bg-green-200 border-l-8 border-green-700">
+                            {{ Session::get('success') }}
+                        </div>
+                    @endif
+
+                    <form class="mx-auto mb-4" action="/sendmail" method="post">
+                        @csrf <input type="hidden" name="page" value="welcome">
+                        <div class="flex justify-between">
+                            <div class="w-1/2">
+                                <label for="name">Nombre</label>
+                                <input class="text-gray-900 w-full" type="text" name="name">
+                                @error('name')
+                                    <p class="text-red-400">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="w-1/2 ml-2">
+                                <label for="name">Correo</label>
+                                <input class="text-gray-900 w-full" type="email" name="email" placeholder="@">
+                                @error('email')
+                                    <p class="text-red-400">{{ $message }}</p>
+                                @enderror
+                            </div>
+                        </div>
+                        <label for="message">Mensaje</label>
+                        <textarea class="w-full text-gray-900" name="message" rows="3"></textarea>
+                        @error('message')
+                            <p class="text-red-400">{{ $message }}</p>
+                        @enderror
+                        <button class="bg-purple-900 my-4 px-6 py-2 uppercase text-white">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </x-app-layout>

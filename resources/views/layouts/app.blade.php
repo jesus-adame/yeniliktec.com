@@ -23,15 +23,15 @@
     <body class="font-sans antialiased">
         <x-jet-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen flex flex-col bg-gray-100">
             <livewire:navbar/>
             
             <!-- Page Content -->
-            <main class="">
+            <main class="flex-1">
                 {{ $slot }}
             </main>
 
-            <footer class="p-4 bg-black text-center text-white block">
+            <footer class=" p-4 bg-gray-900 text-center text-white block">
                 {{ date('Y') }} YenilikTec.com | Todos los derechos reservados &copy;
             </footer>
         </div>

@@ -1,5 +1,5 @@
 <div>
-    <nav x-data="{ open: false }" class="shadow-sm z-20" style="background: #262d37">
+    <nav x-data="{ open: false }" class="shadow-sm z-20 absolute w-full bg-transparent">
         <!-- Primary Navigation Menu -->
         @include('livewire.primary-menu')
     

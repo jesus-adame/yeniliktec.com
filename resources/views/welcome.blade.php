@@ -83,7 +83,7 @@
     </div>
 
     <div class="contact bg-gray-600 py-5 text-white">
-        <div class="container md:mx-4 px-2 m-auto">
+        <div class="container px-2 m-auto">
             <h3 class="uppercase text-2xl py-2">CONTACTO</h3>
             <div class="border-b-4 border-white w-1/3"></div> 
 

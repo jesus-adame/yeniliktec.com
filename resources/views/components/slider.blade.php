@@ -25,18 +25,20 @@
 <div class="mb-8" data-flickity='{ "autoPlay": 3000, "pauseAutoPlayOnHover": false, "wrapAround": true, "prevNextButtons": false }'>
 	<div class="carousel-cell">
 		<img src="/images/fondo_home.webp" class="w-full object-cover absolute inset-0 z-10" style="min-height: 520px; height: 90vh">
-		<div class="content h-full z-20 absolute text-5xl left-16 top-1/3 text-white font-bold">
-			<caption>
-				<p >AGENCIA DIGITAL <span class="text-4xl">DE</span></p>
-				<div class="text-4xl">
-					<p>MARKETING Y DESARROLLO WEB</p>
-					<p>ENFOCADA A <span class="text-5xl">RESULTADOS</span></p>
-				</div>
-				<a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/servicios">COTIZAR</a>
-			</caption>
-		</div>
-		<div class="h-full hidden md:block absolute z-20 right-16 w-1/3 top-1/4">
-			<img src="/images/slide-06.svg" alt="Yeniliktec" width="100%">
+		<div class="container relative m-auto">
+			<div class="content h-full z-20 absolute text-5xl left-16 top-1/3 text-white font-bold">
+				<caption>
+					<p >AGENCIA DIGITAL <span class="text-4xl">DE</span></p>
+					<div class="text-4xl">
+						<p>MARKETING Y DESARROLLO WEB</p>
+						<p>ENFOCADA A <span class="text-5xl">RESULTADOS</span></p>
+					</div>
+					<a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/servicios">COTIZAR</a>
+				</caption>
+			</div>
+			<div class="h-full hidden lg:block absolute z-20 right-16 w-1/3 top-1/4">
+				<img src="/images/slide-06.svg" alt="Yeniliktec" width="100%">
+			</div>
 		</div>
 	</div>
     {{-- <div class="carousel-cell">

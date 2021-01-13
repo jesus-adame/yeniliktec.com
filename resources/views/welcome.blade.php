@@ -2,7 +2,7 @@
     @include('components.slider')
 
     <div class="container mx-auto text-center px-4">
-        <h1 class="text-xl my-4 hidden">YenilikTec</h1>
+        <h1 class="text-xl my-4 hidden">YenilikTec | Marketing Digital y Desarrollo Web</h1>
 
         <h3 class="text-purple-900 font-bold text-4xl pt-8 my-10">TE AYUDAMOS A INTEGRARTE AL MUNDO DIGITAL</h3>
 
@@ -20,12 +20,12 @@
         </p> --}}
 
         {{-- Si tienes un proyecto pendiente de un sitio web para tu negocio, no lo pospongas mas, tenemos servicios a
-                    tu medida para el desarrollo de tu E-Commerce o Sitio Web --}}
-        
+            tu medida para el desarrollo de tu E-Commerce o Sitio Web --}}
+            
         {{-- Si necesitas crear todo un proceso automatizado de ventas y captación de clientes, para generar mayores ingresos en tu negocio por medio de un embudo de negocio, contáctanos porque te podemos orientar. --}}
 
-        <div class="flex flex-wrap justify-between items-center my-20">
-            <div class="md:w-1/3 text-2xl">
+        <div class="flex flex-wrap justify-around items-center my-20">
+            <div class="w-full md:w-1/3 text-2xl my-2">
                 <img src="/images/marketing_digital.svg" alt="Marketing Digital">
                 <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Marketing Digital</h4>
                 <p>Generación de contenido</p>
@@ -33,8 +33,10 @@
                 <p>Campañas en Facebook Ads</p>
                 <p>Comunity Manager</p>
                 <p>Generación de contactos</p>
+                <br>
+                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/marketing-digital">VER MÁS</a>
             </div>
-            <div class="md:w-1/3 text-2xl">
+            <div class="w-full md:w-1/3 text-2xl my-2">
                 <img src="/images/desarrolloweb.svg" alt="Desarrollo web">
                 <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Desarrollo web</h4>
                 <p>Páginas web</p>
@@ -42,15 +44,19 @@
                 <p>Páginas de captura</p>
                 <p>Blogs</p>
                 <p>Sistemas web</p>
+                <br>
+                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/sitios-web">VER MÁS</a>
             </div>
-            <div class="md:w-1/3 text-2xl">
+            {{-- <div class="w-full md:w-1/3 text-2xl my-2">
                 <img src="/images/servicios_tecnologicos.svg" alt="Servicios Tecnológicos">
                 <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Servicios Tecnológicos</h4>
                 <p>Administración de Base de Datos</p>
                 <p>Manejo de software de terceros</p>
                 <p>Administración de servidores</p>
                 <p>Soporte técnico</p>
-            </div>
+                <br>
+                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/servicios">VER MÁS</a>
+            </div> --}}
         </div>
 
         <h3 class="my-10 text-2xl text-purple-900 font-bold">No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.</h3>
@@ -77,7 +83,7 @@
     </div>
 
     <div class="contact bg-gray-600 py-5 text-white">
-        <div class="container mx-4 m-auto">
+        <div class="container md:mx-4 px-2 m-auto">
             <h3 class="uppercase text-2xl py-2">CONTACTO</h3>
             <div class="border-b-4 border-white w-1/3"></div> 
 
@@ -90,7 +96,7 @@
                     <p><a class="hover:underline" href="tel:+527773447577">Phone: +52 777 344 7577</a></p>
                     <p><a class="hover:underline" href="mailto:contacto@yeniliktec.com">Email Address: contacto@yeniliktec.com</a></p>
                 </div>
-                <div id="contacto" class="md:w-1/2">
+                <div id="contacto" class="w-full md:w-1/2">
                     @if(Session::has('success'))
                         <div class="p-4 mb-2 text-green-900 bg-green-200 border-l-8 border-green-700">
                             {{ Session::get('success') }}

@@ -32709,6 +32709,26 @@ select {
           animation: bounce 1s infinite;
 }
 
+body {
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+h1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -192153,4 +192173,3 @@ select {
             animation: bounce 1s infinite;
   }
 }
-

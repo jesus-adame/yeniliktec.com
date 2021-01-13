@@ -10,24 +10,19 @@
 
             <!-- Navigation Links -->
             <div class="hidden space-x-8 sm:-my-px md:ml-auto md:flex uppercase items-center">
-                <x-jet-nav-link
-                    href="/"
-                    :active="request()->routeIs('welcome')">
+                <x-jet-nav-link href="/" :active="request()->routeIs('welcome')">
                     {{ __('Inicio') }}
                 </x-jet-nav-link>
-                <x-jet-nav-link
-                    href="/servicios"
-                    :active="request()->routeIs('services')">
-                    Servicios
+                <x-jet-nav-link href="/marketing-digital" :active="request()->routeIs('marketing')">
+                    Marketing Digital
                 </x-jet-nav-link>
-                <x-jet-nav-link
-                    href="/blog"
-                    :active="request()->routeIs('blog')">
+                <x-jet-nav-link href="/sitios-web" :active="request()->routeIs('websites')">
+                    Sitios Web
+                </x-jet-nav-link>
+                <x-jet-nav-link href="/blog" :active="request()->routeIs('blog')">
                     Blog
                 </x-jet-nav-link>
-                <x-jet-nav-link
-                    href="/contacto"
-                    :active="request()->routeIs('contact')">
+                <x-jet-nav-link href="/contacto" :active="request()->routeIs('contact')">
                     Contacto
                 </x-jet-nav-link>
             </div>

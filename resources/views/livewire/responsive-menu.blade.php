@@ -8,8 +8,11 @@
         <x-jet-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')">
             Inicio
         </x-jet-responsive-nav-link>
-        <x-jet-responsive-nav-link href="{{ route('services') }}" :active="request()->routeIs('services')">
-            Servicios
+        <x-jet-responsive-nav-link href="{{ route('marketing') }}" :active="request()->routeIs('marketing')">
+            Marketing Digital
+        </x-jet-responsive-nav-link>
+        <x-jet-responsive-nav-link href="{{ route('websites') }}" :active="request()->routeIs('websites')">
+            Sitios Web
         </x-jet-responsive-nav-link>
         <x-jet-responsive-nav-link href="{{ route('blog') }}" :active="request()->routeIs('blog')">
             Blog

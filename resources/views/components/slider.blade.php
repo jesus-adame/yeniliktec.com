@@ -24,7 +24,7 @@
 
 <div class="mb-8" data-flickity='{ "autoPlay": 3000, "pauseAutoPlayOnHover": false, "wrapAround": true, "prevNextButtons": false }'>
 	<div class="carousel-cell">
-		<img src="/images/fondo_home.webp" class="h-full w-full object-cover absolute inset-0 z-10" style="min-height: 470px">
+		<img src="/images/fondo_home.webp" class="w-full object-cover absolute inset-0 z-10" style="min-height: 520px; height: 90vh">
 		<div class="content h-full z-20 absolute text-5xl left-16 top-1/3 text-white font-bold">
 			<caption>
 				<p >AGENCIA DIGITAL <span class="text-4xl">DE</span></p>

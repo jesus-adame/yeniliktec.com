@@ -5,7 +5,7 @@
 
 .carousel-cell {
   	width: 100%;
-  	height: 610px;
+  	height: 710px;
   	margin-right: 10px;
   	border-radius: 5px;
   	counter-increment: gallery-cell;
@@ -28,10 +28,10 @@
 		<div class="container relative m-auto">
 			<div class="content h-full z-20 absolute text-5xl left-16 top-1/3 text-white font-bold">
 				<caption>
-					<p >AGENCIA DIGITAL <span class="text-4xl">DE</span></p>
-					<div class="text-4xl">
+					<p >AGENCIA DIGITAL <span class="text-3xl md:text-4xl">DE</span></p>
+					<div class="text-3xl md:text-4xl">
 						<p>MARKETING Y DESARROLLO WEB</p>
-						<p>ENFOCADA A <span class="text-5xl">RESULTADOS</span></p>
+						<p>ENFOCADA A <span class="text-4xl md:text-5xl">RESULTADOS</span></p>
 					</div>
 					<a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="https://wa.me/527773447577">COTIZAR</a>
 				</caption>

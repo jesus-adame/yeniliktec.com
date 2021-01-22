@@ -8,22 +8,6 @@
 
         <div class="border-b-8 border-purple-900 w-1/3 mx-auto"></div>
 
-        {{-- <p>
-            Somos una agencia impulsada por la innovación y el conocimiento. Ayudamos a impulsar negocios en la era digital.
-        </p> --}}
-
-        {{-- <p>        
-            ¿Creas campañas publicitarias pero no te funcionan como desearas? Mejor pide asesoría,
-            podemos ayudarte para hacer que tengas campañas publicitarias efectivas para tu negocio.
-            Tener campañas de marketing digital para tu negocio, es de extrema importancia ya sea si vas empezando o no, todo negocio debe desarrollar una estrategia, por ello puedes preguntar por un plan personalizado que ayude a que crezca mas rápido tu negocio.
-            Inbound Marketing
-        </p> --}}
-
-        {{-- Si tienes un proyecto pendiente de un sitio web para tu negocio, no lo pospongas mas, tenemos servicios a
-            tu medida para el desarrollo de tu E-Commerce o Sitio Web --}}
-            
-        {{-- Si necesitas crear todo un proceso automatizado de ventas y captación de clientes, para generar mayores ingresos en tu negocio por medio de un embudo de negocio, contáctanos porque te podemos orientar. --}}
-
         <div class="flex flex-wrap justify-around items-center my-20">
             <div class="w-full md:w-1/3 text-2xl my-2">
                 <img src="/images/marketing_digital.svg" alt="Marketing Digital">
@@ -47,16 +31,6 @@
                 <br>
                 <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/sitios-web">VER MÁS</a>
             </div>
-            {{-- <div class="w-full md:w-1/3 text-2xl my-2">
-                <img src="/images/servicios_tecnologicos.svg" alt="Servicios Tecnológicos">
-                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Servicios Tecnológicos</h4>
-                <p>Administración de Base de Datos</p>
-                <p>Manejo de software de terceros</p>
-                <p>Administración de servidores</p>
-                <p>Soporte técnico</p>
-                <br>
-                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/servicios">VER MÁS</a>
-            </div> --}}
         </div>
 
         <h3 class="my-10 text-2xl text-purple-900 font-bold">No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.</h3>

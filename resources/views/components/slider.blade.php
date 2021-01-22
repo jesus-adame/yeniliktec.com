@@ -33,7 +33,7 @@
 						<p>MARKETING Y DESARROLLO WEB</p>
 						<p>ENFOCADA A <span class="text-5xl">RESULTADOS</span></p>
 					</div>
-					<a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/servicios">COTIZAR</a>
+					<a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="https://wa.me/527773447577">COTIZAR</a>
 				</caption>
 			</div>
 			<div class="h-full hidden lg:block absolute z-20 right-16 w-1/3 top-1/4">

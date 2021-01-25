@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="w-full text-center my-5">
-            <a class="bg-purple-900 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577">COTIZAR</a>
+            <a class="bg-purple-900 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">COTIZAR</a>
         </div>
     </div>
 </x-app-layout>

@@ -18,7 +18,7 @@
                 <p>Comunity Manager</p>
                 <p>Generación de contactos</p>
                 <br>
-                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/marketing-digital">VER MÁS</a>
+                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/marketing-digital" target="_blank">VER MÁS</a>
             </div>
             <div class="w-full md:w-1/3 text-2xl my-2">
                 <img src="/images/desarrolloweb.svg" alt="Desarrollo web">

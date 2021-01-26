@@ -19,6 +19,9 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+
+        <!-- ManyChat -->
+        <script src="//widget.manychat.com/114960133481077.js" async="async"></script>
     </head>
     <body class="font-sans antialiased">        
         <x-jet-banner />

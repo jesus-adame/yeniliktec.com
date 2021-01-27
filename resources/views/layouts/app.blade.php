@@ -21,32 +21,6 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                    xfbml    : true,
-                    version  : 'v9.0'
-                });
-                };
-
-                (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            } (document, 'script', 'facebook-jssdk'));
-        </script>
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat"
-            attribution=setup_tool
-            page_id="114960133481077"
-            logged_in_greeting="¿Cómo puedo ayudarte?"
-            logged_out_greeting="¿Cómo puedo ayudarte?">
-        </div>
-        {{-- endfile --}}
         <x-jet-banner />
 
         <div class="min-h-screen flex flex-col bg-gray-100">
@@ -78,7 +52,7 @@
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
             href="https://m.me/yeniliktec"
             target="_blank" rel="nofollow">
-            <img src="/images/icons/facebook-messenger-brands.svg" alt="Whatsapp Brand">
+            <img src="/images/icons/facebook-messenger-brands.svg" alt="Facebook Brand">
         </a>
         @livewireScripts
     </body>

@@ -52,7 +52,7 @@
 
         {{-- whatsapp --}}
         <a
-            class="py-3 p-4 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"
+            class="z-20 py-3 p-4 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
             href="https://wa.me/message/6MJV3KNO7ZKZK1"
             target="_blank" rel="nofollow">
@@ -60,7 +60,7 @@
         </a>
         {{-- messenger --}}
         <a
-            class="py-3 p-4 rounded-full bg-blue-500 hover:bg-blue-600 fixed bottom-28 right-9 outline-none flex items-center content-center"
+            class="z-20 py-3 p-4 rounded-full bg-blue-500 hover:bg-blue-600 fixed bottom-28 right-9 outline-none flex items-center content-center"
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
             href="https://m.me/yeniliktec"
             target="_blank" rel="nofollow">

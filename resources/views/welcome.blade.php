@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap items-center justify-around md:flex-row-reverse">
+        <div class="flex flex-wrap items-center justify-around text-2xl md:flex-row-reverse">
             <div class="flex-column md:w-1/2 px-2 md:px-0">
                 <img src="/images/social-media.jpg" alt="Programación" width="100%">
             </div>

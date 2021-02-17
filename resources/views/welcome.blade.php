@@ -1,46 +1,67 @@
 <x-app-layout>
-    @include('components.slider')
-
-    <div class="container mx-auto text-center px-4">
-        <h1 class="text-xl my-4 hidden">YenilikTec | Marketing Digital y Desarrollo Web</h1>
-
-        <h3 class="text-purple-900 font-bold text-4xl pt-8 my-10">TE AYUDAMOS A INTEGRARTE AL MUNDO DIGITAL</h3>
-
-        <div class="border-b-8 border-purple-900 w-1/3 mx-auto"></div>
-
-        <div class="flex flex-wrap justify-around items-center my-20">
-            <div class="w-full md:w-1/3 text-2xl my-2">
-                <img src="/images/marketing_digital.svg" alt="Marketing Digital">
-                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Marketing Digital</h4>
-                <p>Generación de contenido</p>
-                <p>Campañas en Google Ads</p>
-                <p>Campañas en Facebook Ads</p>
-                <p>Comunity Manager</p>
-                <p>Generación de contactos</p>
-                <br>
-                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/marketing-digital" target="_blank">VER MÁS</a>
+    <div class="banner">
+        <div class="banner__content container mx-auto">
+            <div class="px-3 md:w-1/2 mx-auto">
+                <h1 class="text-3xl md:text-5xl">AGENCIA DIGITAL DE MARKETING Y DESARROLLO WEB</h1>
+                <a class="button w-1/2 md:w-1/3" href="https://wa.me/message/6MJV3KNO7ZKZK1" target="_blank">Cotizar</a>
             </div>
-            <div class="w-full md:w-1/3 text-2xl my-2">
-                <img src="/images/desarrolloweb.svg" alt="Desarrollo web">
-                <h4 class="text-purple-900 my-4 text-3xl uppercase font-bold">Desarrollo web</h4>
-                <p>Páginas web</p>
-                <p>Tiendas en linea</p>
-                <p>Páginas de captura</p>
-                <p>Blogs</p>
-                <p>Sistemas web</p>
-                <br>
-                <a class="btn primary shadow py-3 px-9 bg-purple-900 text-white text-base" href="/sitios-web">VER MÁS</a>
+            <div class="figure md:w-1/2">
+                <img src="/images/slide-06.svg" alt="Marketing" width="100%">
             </div>
         </div>
+        <div class="banner__figure">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </div>
 
+    <div class="container-sm text-center px-4">
+        <h1 class="text-xl my-4 hidden">YenilikTec | Marketing Digital y Desarrollo Web</h1>
+        <h3 class="text-purple-900 font-bold text-4xl pt-6 my-5">TE AYUDAMOS A INTEGRARTE AL MUNDO DIGITAL</h3>
+        <div class="border-b-8 border-purple-900 w-1/3 mx-auto"></div>
+    </div>
+    
+    <div class="max-w-screen-xl mx-auto px-4 my-10 text-center">
+        <div class="flex flex-wrap">
+            <div class="flex flex-col my-2 md:w-1/2 text-2xl px-10 py-12">
+                <div class="flex-1 pb-5">
+                    <img class="h-44 mx-auto" src="/images/marketing_digital.svg" alt="Marketing Digital">
+                    <h4 class="text-purple-900 my-4 text-4xl uppercase font-bold">Marketing Digital</h4>
+                    <p>Generación de contenido</p>
+                    <p>Campañas en Google Ads</p>
+                    <p>Campañas en Facebook Ads</p>
+                    <p>Comunity Manager</p>
+                    <p>Generación de contactos</p>
+                </div>
+                <a class="font-bold shadow md:w-1/2 m-auto py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white text-base" href="/marketing-digital" target="_blank">VER MÁS</a>
+            </div>
+            <div class="flex flex-col my-2 md:w-1/2 text-2xl px-10 py-12">
+                <div class="flex-1 pb-5">
+                    <img class="h-44 mx-auto" src="/images/desarrolloweb.svg" alt="Desarrollo web">
+                    <h4 class="text-purple-900 my-4 text-4xl uppercase font-bold">Desarrollo web</h4>
+                    <p>Páginas web</p>
+                    <p>Tiendas en linea</p>
+                    <p>Páginas de captura</p>
+                    <p>Blogs</p>
+                    <p>Sistemas web</p>
+                </div>
+                <a class="font-bold shadow md:w-1/2 m-auto py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white text-base" href="/sitios-web">VER MÁS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm text-center mx-auto">
         <h3 class="my-10 text-2xl text-purple-900 font-bold">No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.</h3>
-        <p class="text-lg">Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.</p>
-        <p class="text-lg">Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.</p>
-        
+        <p class="text-xl">Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.</p>
+        <p class="text-xl">Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.</p>
+    </div>
+    
+    <div class="container-sm text-center">
         <div class="my-10 text-2xl">
             <h2 class="text-purple-900 uppercase font-bold text-4xl pt-8 my-10">Beneficios</h2>
             <div class="border-b-8 border-purple-900 w-1/3 mx-auto mb-2"></div>
-
+    
             <div class="flex justify-between items-center">
                 <div class="text-left leading-relaxed">
                     <p><span class="text-purple-800">&#10004;</span> Tiempo de Entrega</p>
@@ -58,7 +79,7 @@
 
     <div class="contact bg-gray-600 py-5 text-white">
         <div class="container px-2 m-auto">
-            <h3 class="uppercase text-2xl py-2">CONTACTO</h3>
+            <h3 class="uppercase font-bold text-2xl py-2">CONTACTO</h3>
             <div class="border-b-4 border-white w-1/3"></div> 
 
             <div class="flex flex-wrap mt-5">
@@ -77,8 +98,9 @@
                         </div>
                     @endif
 
-                    <form class="mx-auto mb-4" action="/sendmail" method="post">
-                        @csrf <input type="hidden" name="page" value="welcome">
+                    <form class="mx-auto mb-4 font-bold" action="/sendmail" method="post">
+                        @csrf
+                        <input type="hidden" name="page" value="welcome">
                         <div class="flex justify-between">
                             <div class="w-1/2">
                                 <label for="name">Nombre</label>
@@ -100,7 +122,7 @@
                         @error('message')
                             <p class="text-red-400">{{ $message }}</p>
                         @enderror
-                        <button class="bg-purple-900 my-4 px-6 py-2 uppercase text-white">Enviar</button>
+                        <button class="bg-purple-900 font-bold my-4 px-6 py-2 uppercase text-white">Enviar</button>
                     </form>
                 </div>
             </div>

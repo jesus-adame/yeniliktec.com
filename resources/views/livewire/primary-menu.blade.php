@@ -2,7 +2,7 @@
     <div class="flex justify-between">
         <div class="flex justify-between w-full">
             <!-- Logo -->
-            <div class="flex-shrink-0 flex items-center w-52">
+            <div class="flex items-center w-52">
                 <a class="inline-block h-20" href="/">
                     <img src="/images/logo_yeniliktec_blanco.svg" alt="Logo Yeniliktec" class="h-full">
                 </a>

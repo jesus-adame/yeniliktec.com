@@ -8,7 +8,8 @@
         <title>YenilikTec</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -29,11 +30,13 @@
             gtag('config', 'G-SF9DVJ8LSW');
         </script>
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased cursor-default">
         <x-jet-banner />
 
-        <div class="min-h-screen flex flex-col bg-gray-100">
-            <livewire:navbar/>
+        <div class="min-h-screen flex flex-col">
+            <header class="header">
+                <livewire:navbar/>
+            </header>
             
             <!-- Page Content -->
             <main class="flex-1">

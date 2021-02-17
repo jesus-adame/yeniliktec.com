@@ -10,17 +10,17 @@
         <form class="md:w-1/2 mx-auto mb-4" action="/sendmail" method="post">
             @csrf <input type="hidden" name="page" value="contact">
             <label for="name">Nombre</label>
-            <input class="w-full shadow border-none" type="text" name="name">
+            <input class="w-full shadow border-none bg-gray-50" type="text" name="name">
             @error('name')
                 <p class="text-red-400">{{ $message }}</p>
             @enderror
             <label for="name">Correo</label>
-            <input class="w-full shadow border-none" type="email" name="email">
+            <input class="w-full shadow border-none bg-gray-50" type="email" name="email">
             @error('email')
                 <p class="text-red-400">{{ $message }}</p>
             @enderror
             <label for="message">Mensaje</label>
-            <textarea class="w-full shadow border-none" name="message" rows="3"></textarea>
+            <textarea class="w-full shadow border-none bg-gray-50" name="message" rows="3"></textarea>
             @error('message')
                 <p class="text-red-400">{{ $message }}</p>
             @enderror

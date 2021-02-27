@@ -32788,7 +32788,7 @@ h3 {
   height: 20%;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
 }
 
 .banner .button {
@@ -32818,7 +32818,7 @@ h3 {
   height: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 750px) {
   .banner .figure {
     display: block;
   }

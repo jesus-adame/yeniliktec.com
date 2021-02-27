@@ -1,4 +1,4 @@
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between">
         <div class="flex justify-between w-full">
             <!-- Logo -->
@@ -9,7 +9,7 @@
             </div>
 
             <!-- Navigation Links -->
-            <div class="hidden space-x-8 sm:-my-px md:ml-auto md:flex uppercase items-center">
+            <div class="hidden md:ml-auto md:flex uppercase items-center">
                 <x-jet-nav-link href="/" :active="request()->routeIs('welcome')">
                     {{ __('Inicio') }}
                 </x-jet-nav-link>

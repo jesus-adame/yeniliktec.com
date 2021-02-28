@@ -16,8 +16,6 @@
 
         @livewireStyles
 
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 

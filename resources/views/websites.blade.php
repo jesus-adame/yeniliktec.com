@@ -3,7 +3,7 @@
 
     <div class="container mx-auto my-10">
         <div class="service">
-            <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
+            <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 mb-4 font-bold">Diseño Web</h3>
                     <p class="text-xl text-justify">
@@ -16,14 +16,14 @@
                     </p>
                 </div>
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/web-design.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto rounded-lg" src="/images/web-design.png" alt="Diseño web" width="60%">
                 </div>
             </div>
         </div>
         <div class="service">
-            <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
+            <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/thank-you.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/thank-you.png" alt="Landing page" width="60%">
                 </div>
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 mb-4 font-bold">Landing Page</h3>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="service">
-            <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
+            <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 mb-4 font-bold">Páginas Web</h3>
                     <p class="text-xl text-justify">
@@ -48,14 +48,14 @@
                     </p>
                 </div>
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/website.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/website.png" alt="Websites" width="60%">
                 </div>
             </div>
         </div>
         <div class="service">
-            <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
+            <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="E-commerce" width="60%">
                 </div>
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 mb-4 font-bold">E-commerce</h3>
@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="service">
-            <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
+            <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 mb-4 font-bold">Sistemas Web</h3>
                     <p class="text-xl text-justify">
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="w-full text-center my-5">
-            <a class="bg-purple-900 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">COTIZAR</a>
+            <a class="bg-purple-900 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
         </div>
     </div>
 </x-app-layout>

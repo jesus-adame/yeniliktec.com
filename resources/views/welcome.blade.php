@@ -6,7 +6,6 @@
                 <a class="button w-1/2 md:w-1/3" href="https://wa.me/message/6MJV3KNO7ZKZK1" target="_blank">Cotizar</a>
             </div>
             <div class="figure md:w-1/2 mx-auto">
-                {{-- <img src="/images/slide-06.svg" alt="Marketing" width="100%"> --}}
                 <img src="/images/pc-design1.png" alt="Marketing" width="100%">
             </div>
         </div>
@@ -62,13 +61,13 @@
     <div class="parallax-2 relative overflow-hidden">
         <div class="container-sm relative z-10 text-white text-center my-20 mx-auto">
             <h3 class="text-2xl text-white font-bold">No desperdicies dinero en tratar de crear tus campañas publicitarias, mejor comunícate con nuestros especialistas, para que te puedan asesorar.</h3>
-            <div class="border-b-8 my-8 text-xl border-blue-800 w-1/3 mx-auto"></div>
-            <p class="text-xl">Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.</p>
-            <p class="text-xl">Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.</p>
+            <br><br>
+            <p class="text-2xl mb-5">Sabemos que lo que mas te interesa para tu negocio es el tiempo de entrega de tu proyecto, por lo cual optimizamos nuestros tiempos de trabajo para que tus proyectos esten finalizados en el menor tiempo posible.</p>
+            <p class="text-2xl">Si necesitas generar mayores ventas en tu negocio, pide informe acerca de nuestros servicios de estrategias de Inbound Marketing.</p>
         </div>
     </div>
 
-    <div class="container-sm mx-auto py-10 my-5 text-center">
+    <div class="container-sm mx-auto my-10 text-center">
         <p class="py-5 text-2xl">
             Nos enfocamos mucho en ayudar a los emprendedores a hacer escalable su negocio por medio de nuestras herramientas y estrategias en el ámbito tecnológico.
         </p>
@@ -82,7 +81,6 @@
         <div class="container-sm text-center">
             <div class="text-2xl py-9">
                 <h2 class="text-blue-900 uppercase font-bold text-4xl pb-8">Beneficios</h2>
-                <div class="border-b-8 border-blue-900 w-1/3 mx-auto mb-8"></div>
         
                 <div class="flex justify-around items-center py-10 bg-white">
                     <div class="md:w-1/2 p-4 rounded-lg text-left leading-relaxed">
@@ -95,58 +93,6 @@
                     <div class="md:w-1/3 hidden sm:block">
                         <img src="/images/performance.png" alt="To the stars" width="100%">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact bg-gray-600 py-5 text-white">
-        <div class="container px-2 m-auto">
-            <h3 class="uppercase font-bold text-2xl py-2">CONTACTO</h3>
-            <div class="border-b-4 border-white w-1/3"></div> 
-
-            <div class="flex flex-wrap mt-5">
-                <div class="md:w-1/2">
-                    <p>Si tienes dudas acerca de los planes o paquetes o podemos ofrecerte,</p>
-                    <p>puedes contactarnos vía correo, whatsapp o directamente en nuestras redes sociales.</p>
-                    <br><br>
-                    <p>Address: Cuernavaca Morelos</p>
-                    <p><a class="hover:underline" href="tel:+527773447577">Phone: +52 777 344 7577</a></p>
-                    <p><a class="hover:underline" href="mailto:contacto@yeniliktec.com">Email Address: contacto@yeniliktec.com</a></p>
-                </div>
-                <div id="contacto" class="w-full md:w-1/2">
-                    @if(Session::has('success'))
-                        <div class="p-4 mb-2 text-green-900 bg-green-200 border-l-8 border-green-700">
-                            {{ Session::get('success') }}
-                        </div>
-                    @endif
-
-                    <form class="mx-auto mb-4 font-bold" action="/sendmail" method="post">
-                        @csrf
-                        <input type="hidden" name="page" value="welcome">
-                        <div class="flex justify-between">
-                            <div class="w-1/2">
-                                <label class="block pb-2" for="name">Nombre</label>
-                                <input class="text-gray-900 w-full" type="text" name="name">
-                                @error('name')
-                                    <p class="text-red-400">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            <div class="w-1/2 ml-2">
-                                <label class="block pb-2" for="name">Correo</label>
-                                <input class="text-gray-900 w-full" type="email" name="email" placeholder="@">
-                                @error('email')
-                                    <p class="text-red-400">{{ $message }}</p>
-                                @enderror
-                            </div>
-                        </div>
-                        <label class="block pb-2" for="message">Mensaje</label>
-                        <textarea class="w-full text-gray-900" name="message" rows="3"></textarea>
-                        @error('message')
-                            <p class="text-red-400">{{ $message }}</p>
-                        @enderror
-                        <button class="bg-purple-900 hover:bg-purple-800 font-bold my-4 px-6 py-2 uppercase text-white">Enviar</button>
-                    </form>
                 </div>
             </div>
         </div>

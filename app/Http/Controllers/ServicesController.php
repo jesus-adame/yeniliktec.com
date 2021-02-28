@@ -18,6 +18,6 @@ class ServicesController extends Controller
 
     public function websites()
     {
-        return view('websites', [ "title" => "sitios web" ]);
+        return view('websites', [ "title" => "desarrollo web" ]);
     }
 }

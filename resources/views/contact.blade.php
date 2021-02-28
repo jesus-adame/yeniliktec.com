@@ -2,7 +2,8 @@
     @include('components.breadcrumb')
     <div class="container-sm mx-auto px-4">
         <p class="text-xl text-center my-6">
-            Si tienes dudas acerca de los planes o paquetes o podemos ofrecerte, puedes contactarnos vía correo, whatsapp o directamente en nuestras redes sociales.
+            Si tienes dudas acerca de los planes o paquetes que podemos ofrecerte, puedes contactarnos vía correo, whatsapp o directamente en nuestras redes sociales.
+            Te atenderemos lo antes posible.
         </p>
         @if(Session::has('success'))
             <div class="p-4 text-green-900 bg-green-200 border-l-5 border-green-700">

@@ -5,7 +5,7 @@
         <div class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/socialmedia.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="60%">
                 </div>
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 pb-4 font-bold">Social Media Strategist</h3>
@@ -29,14 +29,14 @@
                     </p>
                 </div>
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="60%">
                 </div>
             </div>
         </div>
         <div class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_filter.svg" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="60%">
                 </div>
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 pb-4 font-bold">Inbound Marketing</h3>
@@ -59,14 +59,14 @@
                     </p>
                 </div>
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="60%">
                 </div>
             </div>
         </div>
         <div class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="60%">
                 </div>
                 <div class="content w-full md:w-1/2">
                     <h3 class="text-purple-900 pb-4 font-bold">Posicionamiento SEO & SEM</h3>
@@ -93,13 +93,13 @@
                     </p>
                 </div>
                 <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Sistemas Web" width="60%">
+                    <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="60%">
                 </div>
             </div>
         </div>
-        
+        <br>
         <div class="w-full text-center my-5">
-            <a class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto" href="https://wa.me/527773447577" target="_blank">COTIZAR</a>
+            <a class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
         </div>
     </div>
 </x-app-layout>

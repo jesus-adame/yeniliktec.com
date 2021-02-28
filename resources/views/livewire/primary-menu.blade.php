@@ -17,7 +17,7 @@
                     Marketing Digital
                 </x-jet-nav-link>
                 <x-jet-nav-link href="/sitios-web" :active="request()->routeIs('websites')">
-                    Sitios Web
+                    Desarrollo Web
                 </x-jet-nav-link>
                 <x-jet-nav-link href="/blog" :active="request()->routeIs('blog')">
                     Blog

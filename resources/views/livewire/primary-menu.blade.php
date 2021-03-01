@@ -64,7 +64,7 @@
                             </x-jet-dropdown-link>
 
                             <x-jet-dropdown-link href="{{ route('posts.create') }}">
-                                Publicar entrada
+                                Publicar Entrada
                             </x-jet-dropdown-link>
             
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

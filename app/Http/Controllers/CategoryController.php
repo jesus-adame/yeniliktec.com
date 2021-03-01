@@ -12,6 +12,12 @@ class CategoryController extends Controller
         $this->middleware('auth')->except('show');
     }
 
+    public function render()
+    {
+        $categories = Category::paginate();
+        return view('categories.render');
+    }
+
     public function index()
     {
         $categories = Category::paginate();

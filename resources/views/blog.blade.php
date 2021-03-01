@@ -3,8 +3,8 @@
 @section('content')
 @include('components.breadcrumb')
 <div class="container m-auto my-10">
-    <div class="flex justify-between">
-        <div class="w-2/3 px-4">
+    <div class="flex flex-wrap justify-between">
+        <div class="md:w-2/3 px-4">
             @foreach ($posts as $post)
                 <div class="post shadow p-4 mb-5">
                     <a class="flex items-center justify-between" href="{{ route('posts.show', ['post' => $post->id ]) }}">
@@ -25,7 +25,9 @@
             @endif
             {{ $posts->links() }}
         </div>
-        @include('shared.sidebar')
+        <div class="md:w-1/3 px-4">
+            @include('shared.sidebar')
+        </div>
     </div>
 </div>
 @endsection

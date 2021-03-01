@@ -46,9 +46,8 @@ class PostController extends Controller
     {
         $request->validate([
             'category_id' => 'required|numeric|exists:categories,id',
-            'title'       => 'required|min:4',
-            'slug'        => 'required|min:4|unique:posts,slug',
-            'excerpt'     => 'required|min:4',
+            'title'       => 'required|min:4|unique:posts,title',
+            'excerpt'     => 'required|min:4|max:200',
             'content'     => 'required|min:4',
             'image'       => 'required|image',
         ]);
@@ -61,10 +60,10 @@ class PostController extends Controller
         $post->user_id  = $request->user()->id;
         $post->category_id = $data['category_id'];
         $post->title    = $data['title'];
-        $post->slug     = $data['slug'];
+        $post->slug     = $this->toUrlFormat($data['title']);
         $post->excerpt  = $data['excerpt'];
         $post->content  = $data['content'];
-        $post->image    = trim($path, 'public/');
+        $post->image    = $path;
         $post->save();
 
         return redirect(route('blog'))
@@ -79,9 +78,7 @@ class PostController extends Controller
 
         $request->validate([
             'category_id' => 'required|numeric|exists:categories,id',
-            'title'       => 'required|min:4',
-            'slug'        => 'required|min:4|unique:posts,slug,' . $post->id,
-            'excerpt'     => 'required|min:4',
+            'title'       => 'required|min:4|unique:posts,title,' . $post->id,
             'content'     => 'required|min:4',
             'image'       => 'nullable|image',
         ]);
@@ -90,12 +87,12 @@ class PostController extends Controller
 
         if ($request->file('image')) {
             $path = $request->file('image')->store('public');
-            $post->image    = trim($path, 'public/');
+            $post->image    = $path;
         }
 
         $post->category_id = $data['category_id'];
         $post->title    = $data['title'];
-        $post->slug     = $data['slug'];
+        $post->slug     = $this->toUrlFormat($data['title']);
         $post->excerpt  = $data['excerpt'];
         $post->content  = $data['content'];
         $post->save();
@@ -113,5 +110,64 @@ class PostController extends Controller
         $post->delete();
         return redirect(route('blog'))
             ->with('status', 'Eliminado correctamente.');
+    }
+
+    public function toUrlFormat($string)
+    {
+        $string = trim($string);
+ 
+        $string = str_replace(
+            array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+            $string
+        );
+    
+        $string = str_replace(
+            array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+            array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+            $string
+        );
+    
+        $string = str_replace(
+            array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+            array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+            $string
+        );
+    
+        $string = str_replace(
+            array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+            $string
+        );
+    
+        $string = str_replace(
+            array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+            array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+            $string
+        );
+    
+        $string = str_replace(
+            array('ñ', 'Ñ', 'ç', 'Ç'),
+            array('n', 'N', 'c', 'C',),
+            $string
+        );
+    
+        //Esta parte se encarga de eliminar cualquier caracter extraño
+        $string = str_replace(
+            array("º", "-", "~", "\\", '¨',
+                "#", "@", "|", "!", '"',
+                "·", "$", "%", "&", "/",
+                "(", ")", "?", "'", "¡",
+                "¿", "[", "^", "<code>", "]",
+                "+", "}", "{", "¨", "´",
+                ">", "< ", ";", ",", ":",
+                "."),
+            '',
+            $string
+        );
+
+        $string = str_replace(' ', '-', $string);
+ 
+        return strtolower($string);
     }
 }

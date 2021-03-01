@@ -4,49 +4,67 @@ require('alpinejs');
 
 require('./build/ckeditor')
 
-ClassicEditor
-    .create(document.querySelector('#editor'), {
-        toolbar: {
-            items: [
-                'heading',
-                '|',                                                // <--- ADDED
-                'bold',
-                'italic',
-                'link',
-                'bulletedList',
-                'numberedList',
-                'imageUpload',
-                'blockQuote',
-                'imageTextAlternative',
-                'insertTable'
-            ]
-        },
-        image: {
-            toolbar: [ 'imageTextAlternative' ],
-			upload: { types: [ 'png', 'jpeg', 'webp' ] }, // Image upload feature options.
-            // You need to configure the image toolbar, too, so it uses the new style buttons.
+let editorEl = document.querySelector('#editor')
 
-            styles: [
-                // This option is equal to a situation where no style is applied.
-                'full',
+let editorConfig = {
+    toolbar: {
+        items: [
+            'heading',
+            '|',                                                // <--- ADDED
+            'bold',
+            'italic',
+            'alignment:left',
+            'alignment:right',
+            'alignment:center',
+            'alignment:justify',
+            '|',
+            'bulletedList',
+            'numberedList',
+            'imageUpload',
+            'link',
+            'blockQuote',
+            'imageTextAlternative',
+            'codeBlock',
+            'insertTable',
+        ]
+    },
+    image: {
+        toolbar: [ 'imageTextAlternative' ],
+        upload: { types: [ 'png', 'jpeg', 'webp' ] }, // Image upload feature options.
+        // You need to configure the image toolbar, too, so it uses the new style buttons.
 
-                // This represents an image aligned to the left.
-                'alignLeft',
+        styles: [
+            // This option is equal to a situation where no style is applied.
+            'full',
 
-                // This represents an image aligned to the right.
-                'alignRight'
-            ]
-		},
-        language: 'es',
-        table: {
-            contentToolbar: [
-                'tableColumn',
-                'tableRow',
-                'mergeTableCells'
-            ]
-        },
+            // This represents an image aligned to the left.
+            'alignLeft',
 
-    })
-    .catch( error => {
-        console.error( error );
-    });
+            // This represents an image aligned to the right.
+            'alignRight'
+        ]
+    },
+    language: 'es',
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    },
+    codeBlock: {
+        languages: [
+            { language: 'css', label: 'CSS' },
+            { language: 'html', label: 'HTML' },
+            { language: 'php', label: 'PHP' },
+        ]
+    }
+}
+
+if (editorEl) {
+    ClassicEditor
+        .create(editorEl, editorConfig)
+        .catch( error => {
+            console.error( error );
+        });
+}

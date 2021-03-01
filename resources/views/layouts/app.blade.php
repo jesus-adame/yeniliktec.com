@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        @yield('meta')
 
         <title>YenilikTec</title>
 
@@ -56,7 +57,7 @@
             
             <!-- Page Content -->
             <main class="flex-1">
-                {{ $slot }}
+                @yield('content')
             </main>
 
             <footer>
@@ -113,5 +114,6 @@
             <img src="/images/icons/facebook-messenger-brands.svg" alt="Facebook Brand">
         </a>
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>

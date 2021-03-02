@@ -30,7 +30,7 @@
 </div>
 
 <div class="container mx-auto my-20">
-    <div class="flex flex-wrap items-center justify-around">
+    <div class="flex flex-wrap items-center justify-around md:flex-row-reverse">
         <div class="flex-column md:w-1/2 px-2 md:px-0">
             <img src="/images/content-marketing.png" alt="Programación" width="100%">
         </div>
@@ -47,7 +47,7 @@
             <a class="block w-full text-center font-bold shadow m-auto py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white" href="/marketing-digital">VER MÁS</a>
         </div>
     </div>
-    <div class="flex flex-wrap items-center justify-around mt-10 md:flex-row-reverse">
+    <div class="flex flex-wrap items-center justify-around mt-10">
         <div class="flex-column md:w-1/2 px-5">
             <img class="w-full" src="/images/mockup-pc.png" alt="Programación">
         </div>

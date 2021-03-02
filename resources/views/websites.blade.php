@@ -5,8 +5,11 @@
 
 <div class="container mx-auto my-10">
     <div class="service">
-        <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
+            <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                <img class="mx-auto rounded-lg" src="/images/web-design.png" alt="Diseño web" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 mb-4 font-bold">Diseño Web</h3>
                 <p class="text-xl text-justify">
                     Ya sea que quieras tener tu primer sitio o quieras rediseñar el actual,
@@ -17,17 +20,14 @@
                     experiencia agradable y cómoda que dé una buena imagen de tu marca.
                 </p>
             </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto rounded-lg" src="/images/web-design.png" alt="Diseño web" width="60%">
-            </div>
         </div>
     </div>
     <div class="service">
-        <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/thank-you.png" alt="Landing page" width="60%">
+        <div class="flex flex-wrap my-5 mx-4 items-center justify-around md:flex-row-reverse">
+            <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                <img class="mx-auto" src="/images/thank-you.png" alt="Landing page" width="70%">
             </div>
-            <div class="content w-full md:w-1/2">
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 mb-4 font-bold">Landing Page</h3>
                 <p class="text-xl text-justify">
                     Diseñamos paginas de captura. Con el fin de atraer a tu público,
@@ -37,8 +37,11 @@
         </div>
     </div>
     <div class="service">
-        <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
+            <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                <img class="mx-auto" src="/images/website.png" alt="Websites" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 mb-4 font-bold">Páginas Web</h3>
                 <p class="text-xl text-justify">
                     Si lo tuyo es crear una marca, también desarrollamos sitios web informativos,
@@ -49,17 +52,14 @@
                     dispositivo.
                 </p>
             </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/website.png" alt="Websites" width="60%">
-            </div>
         </div>
     </div>
     <div class="service">
-        <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="E-commerce" width="60%">
+        <div class="flex flex-wrap my-5 mx-4 items-center justify-around md:flex-row-reverse">
+            <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                <img class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="E-commerce" width="70%">
             </div>
-            <div class="content w-full md:w-1/2">
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 mb-4 font-bold">E-commerce</h3>
                 <p class="text-xl mb-4 text-justify">
                     Haz crecer tus ventas de manera exponencial con un e-commerce.
@@ -76,8 +76,11 @@
         </div>
     </div>
     <div class="service">
-        <div class="flex flex-wrap my-5 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
+            <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                <img class="mx-auto" src="/images/sistemas-web.png" alt="Sistemas Web" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 mb-4 font-bold">Sistemas Web</h3>
                 <p class="text-xl text-justify">
                     Creamos sistemas web a través de un análisis integral sobre la solución que mejor
@@ -92,13 +95,10 @@
                     con una atención al cliente de manera execpcional los 7 días de la semana durante todo el año.
                 </p>
             </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/sistemas-web.png" alt="Sistemas Web" width="60%">
-            </div>
         </div>
     </div>
     <div class="w-full text-center my-5">
-        <a class="bg-purple-900 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
+        <a class="bg-purple-900 hover:bg-purple-800 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
     </div>
 </div>
 @endsection

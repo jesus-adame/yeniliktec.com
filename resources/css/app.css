@@ -132,10 +132,16 @@
     color: #761a64;
 }
 
+.table {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .table,
 .table table {
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .table th {

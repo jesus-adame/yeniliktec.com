@@ -29,7 +29,7 @@
     
             <div class="w-full md:w-1/3 pl-4">
                 <button class="w-full mt-2 py-2 px-4 bg-yellow-400 hover:bg-yellow-300" type="submit">Actualizar</button>
-                <a href="{{ route('posts.show', ['post' => $post->id ]) }}" class="mt-2 py-2 px-4 bg-gray-500 hover:bg-gray-400 text-white block text-center">
+                <a href="{{ route('posts.show', ['slug' => $post->slug ]) }}" class="mt-2 py-2 px-4 bg-gray-500 hover:bg-gray-400 text-white block text-center">
                     Cancelar
                 </a>
 

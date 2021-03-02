@@ -7,9 +7,9 @@
     <div class="service mb-3">
         <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
             <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="60%">
+                <img class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="70%">
             </div>
-            <div class="content w-full md:w-1/2">
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Social Media Strategist</h3>
                 <p class="text-xl text-justify">
                     Desarrollamos estrategias que te ayudarán a generar mayor
@@ -20,8 +20,11 @@
         </div>
     </div>
     <div class="service mb-3">
-        <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
+            <div class="thumb w-full md:w-1/2">
+                <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Branding</h3>
                 <p class="text-xl text-justify">
                     Creamos imágenes corporativas por medio de nuestros especialistas.
@@ -30,17 +33,14 @@
                     conecte con tu público objetivo.
                 </p>
             </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="60%">
-            </div>
         </div>
     </div>
     <div class="service mb-3">
         <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
             <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="60%">
+                <img class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="70%">
             </div>
-            <div class="content w-full md:w-1/2">
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Inbound Marketing</h3>
                 <p class="text-xl text-justify">
                     Realizamos estrategias a la medida para la generación de clientes potenciales
@@ -51,8 +51,11 @@
         </div>
     </div>
     <div class="service mb-3">
-        <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
+            <div class="thumb w-full md:w-1/2">
+                <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Comunity Manager</h3>
                 <p class="text-xl text-justify">
                     Ofrecemos servicios de implementación de estrategias de contenido en redes
@@ -60,17 +63,14 @@
                     marca, dándole al mismo tiempo autoría y voz ante la audiencia que quieras alcanzar. 
                 </p>
             </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="60%">
-            </div>
         </div>
     </div>
     <div class="service mb-3">
         <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
             <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="60%">
+                <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="70%">
             </div>
-            <div class="content w-full md:w-1/2">
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Posicionamiento SEO & SEM</h3>
                 <p class="text-xl text-justify">
                     Posicionamos tu sitio web en distintos motores de búsqueda por medio de
@@ -81,8 +81,11 @@
         </div>
     </div>
     <div class="service mb-3">
-        <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-            <div class="content w-full md:w-1/2">
+        <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
+            <div class="thumb w-full md:w-1/2">
+                <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="70%">
+            </div>
+            <div class="content w-full p-4 md:w-1/2">
                 <h3 class="text-purple-900 pb-4 font-bold">Analítica Web</h3>
                 <p class="text-xl text-justify">
                     Nos importa el crecimiento de tu negocio mediante nuestros servicios,
@@ -93,9 +96,6 @@
                     Esto servirá para medir de manera real y concreta la efectividad de tu empresa en medios digitales,
                     para así mejorar la toma de decisiones en el negocio o futuras campañas de marketing.
                 </p>
-            </div>
-            <div class="thumb w-full md:w-1/2">
-                <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="60%">
             </div>
         </div>
     </div>

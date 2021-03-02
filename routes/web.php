@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostController;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', WelcomeController::class)->name('welcome');
 
 Route::get('/blog', BlogController::class)->name('blog');
+Route::get('/blog/{slug}', [ PostController::class, 'show' ])->name('posts.show');
 
 Route::get('/contacto', ContactController::class)->name('contact');
 
@@ -31,7 +33,6 @@ Route::get('/sitios-web', [ ServicesController::class, 'websites' ])->name('webs
 
 Route::get('/posts/create', [ PostController::class, 'create' ])->name('posts.create');
 Route::post('/posts', [ PostController::class, 'store' ])->name('posts.store');
-Route::get('/posts/{post}', [ PostController::class, 'show' ])->name('posts.show');
 Route::get('/posts/{post}/edit', [ PostController::class, 'edit' ])->name('posts.edit');
 Route::put('/posts/{post}', [ PostController::class, 'update' ])->name('posts.update');
 Route::delete('/posts/{post}', [ PostController::class, 'destroy' ])->name('posts.destroy');
@@ -42,3 +43,8 @@ Route::get('/categories/create', [ CategoryController::class, 'create' ])->name(
 Route::post('/categories', [ CategoryController::class, 'store' ])->name('categories.store');
 Route::get('/categories/{category}', [ CategoryController::class, 'show' ])->name('categories.show');
 Route::delete('/categories/{category}', [ CategoryController::class, 'destroy' ])->name('categories.destroy');
+
+Route::post('/comments', [ CommentController::class, 'store' ])->name('comments.store');
+Route::get('/comments/{comment}/edit', [ CommentController::class, 'edit' ])->name('comments.edit');
+Route::put('/comments/{comment}', [ CommentController::class, 'update' ])->name('comments.update');
+Route::delete('/comments/{comment}', [ CommentController::class, 'destroy' ])->name('comments.destroy');

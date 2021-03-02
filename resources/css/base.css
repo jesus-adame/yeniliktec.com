@@ -30,7 +30,7 @@ h4 {
     line-height: 1.7rem;
 }
 
-p {
+p, li {
     font-size: 1.1rem;
 }
 
@@ -41,4 +41,16 @@ pre {
     background-color: rgba(199, 199, 199, 0.302);
     border: solid 1px #c4c4c4;
     border-radius: 3px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
 }

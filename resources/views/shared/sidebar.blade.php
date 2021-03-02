@@ -12,7 +12,7 @@
     <hr>
     <a class="block hover:underline py-2" href="{{ route('blog') }}">Todas las entradas</a>
     @foreach (\App\Models\Post::orderByDesc('created_at')->take(5)->get() as $post)
-        <a class="block hover:underline py-2" href="{{ route('posts.show', [ 'post' => $post->id ]) }}">
+        <a class="block hover:underline py-2" href="{{ route('posts.show', [ 'slug' => $post->slug ]) }}">
             {{ $post->title }}
         </a>
     @endforeach

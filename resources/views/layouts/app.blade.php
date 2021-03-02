@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         @yield('meta')
 
-        <title>YenilikTec</title>
+        <title>@yield('title', 'YenilikTec')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,37 +19,13 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @stack('scripts')
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF9DVJ8LSW"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-SF9DVJ8LSW');
-        </script>
-
-        <!-- Facebook Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '4371167156243433');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=4371167156243433&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
+        @production
+            @include('layouts.integrations')
+        @endproduction
     </head>
     <body class="font-sans antialiased cursor-default">
-        <x-jet-banner />
-
         <div class="min-h-screen flex flex-col">
             <header class="header">
                 <livewire:navbar/>
@@ -67,7 +43,7 @@
                             <div class="md:w-1/3 px-5">
                                 <img src="/images/logo_yeniliktec_blanco.svg" alt="Yeniliktec Logo" class="w-full">
                             </div>
-                            <div class="md:w-1/3">
+                            <div class="w-full md:w-1/3">
                                 <h3 class="uppercase font-bold text-2xl py-2">CONTACTO</h3>
                                 <div class="border-b-4 border-white w-24 mb-5"></div>
                                 <address>Cuernavaca Morelos, México.</address>
@@ -114,6 +90,5 @@
             <img src="/images/icons/facebook-messenger-brands.svg" alt="Facebook Brand">
         </a>
         @livewireScripts
-        @stack('scripts')
     </body>
 </html>

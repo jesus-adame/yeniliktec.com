@@ -132,6 +132,20 @@
     color: #761a64;
 }
 
+.image {
+    margin: 0.5em auto;
+}
+
+.image-style-align-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.image-style-align-left {
+    float: left;
+    margin-right: 1em;
+}
+
 .table {
     margin-top: 1rem;
     margin-bottom: 1rem;

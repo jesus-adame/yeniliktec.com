@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="Ofecemos servicios profecionales de Diseño Web, creación de landing pages, e-commerce, sistemas web y más."/>
+<meta name="keywords" content="Páginas web, Sistemas Web, Landig Pages, e-commerce"/>
+<meta name="robots" content="index, follow"/>
+@endsection
+
 @section('content')
 @include('components.breadcrumb')
-
 <div class="container mx-auto my-10">
     <div class="service">
         <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
@@ -98,7 +103,7 @@
         </div>
     </div>
     <div class="w-full text-center my-5">
-        <a class="bg-purple-900 hover:bg-purple-800 text-white py-4 px-9 mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
+        <a href="https://wa.me/527773447577" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-800 text-white py-4 px-9 mx-auto">SOLICITAR INFORMACIÓN</a>
     </div>
 </div>
 @endsection

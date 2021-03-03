@@ -3,7 +3,9 @@
 @section('title', 'YenilikTec | Agencia de Marketing Digital & Desarrollo Web')
 
 @section('meta')
-<meta name="description" content="Agencia de Marketing Digital & Desarrollo Web enfocada en la innovación. Ayudamos a los negocios a integrarse y crecer en la era digital.">
+<meta name="description" content="Agencia de Marketing Digital & Desarrollo Web enfocada en la innovación. Ayudamos a los negocios a integrarse y crecer en la era digital."/>
+<meta name="keywords" content="Marketing digital, Agencia de Merketing, Desarrollo Web, Sistemas Web"/>
+<meta name="robots" content="index, follow"/>
 @endsection
 
 @section('content')

@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="Contacto Yeniliktec | Agencia de Marketing Digital & Desarrollo Web."/>
+<meta name="keywords" content="Contacto Yeniliktec"/>
+<meta name="robots" content="index"/>
+@endsection
+
 @section('content')
 @include('components.breadcrumb')
 <div class="container-sm mx-auto px-4">
@@ -11,7 +17,7 @@
         <div class="p-4 text-green-900 bg-green-200 border-l-5 border-green-700">
             {{ Session::get('success') }}
         </div>
-    @endif   
+    @endif
     <form class="md:w-1/2 mx-auto mb-4" action="/sendmail" method="post">
         @csrf <input type="hidden" name="page" value="contact">
         <label class="hidden" for="name">Nombre</label>

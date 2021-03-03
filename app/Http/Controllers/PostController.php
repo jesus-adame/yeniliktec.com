@@ -99,7 +99,7 @@ class PostController extends Controller
         $post->content  = $data['content'];
         $post->save();
 
-        return redirect(route('posts.show', ['post' => $post->id]))
+        return redirect(route('posts.show', [$post->slug]))
             ->with('status', 'Actualizado correctamente.');
     }
 

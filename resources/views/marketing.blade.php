@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="Servicios de Marketing Digital en Cuernavaca Morelos con SEO, SEM, estratégias de redes sociales y más."/>
+<meta name="keywords" content="Social Media Strategist, Branding, Community Manager, Analítica Web, Seo y sem"/>
+<meta name="robots" content="index, follow"/>
+@endsection
+
 @section('content')
 @include('components.breadcrumb')
 
@@ -56,7 +62,7 @@
                 <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="70%">
             </div>
             <div class="content w-full p-4 md:w-1/2">
-                <h3 class="text-purple-900 pb-4 font-bold">Comunity Manager</h3>
+                <h3 class="text-purple-900 pb-4 font-bold">Community Manager</h3>
                 <p class="text-xl text-justify">
                     Ofrecemos servicios de implementación de estrategias de contenido en redes
                     sociales, con la finalidad de ayudar a crear una comunidad de seguidores de tu
@@ -101,7 +107,7 @@
     </div>
     <br>
     <div class="w-full text-center my-5">
-        <a class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto" href="https://wa.me/527773447577" target="_blank">SOLICITAR INFORMACIÓN</a>
+        <a href="https://wa.me/527773447577" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto">SOLICITAR INFORMACIÓN</a>
     </div>
 </div>
 @endsection

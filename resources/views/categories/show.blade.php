@@ -8,7 +8,7 @@
             <div class="w-2/3">
                 @foreach ($category->posts as $post)
                     <div class="post shadow p-4 mb-5">
-                        <a class="flex items-center justify-between" href="{{ route('posts.show', ['post' => $post->id ]) }}">
+                        <a class="flex items-center justify-between" href="{{ route('posts.show', [$post->slug]) }}">
                             <div class="content">
                                 <h2 class="my-3">{{ $post->title }}</h2>
                                 <p class="mb-4">{{ $post->user->name }}</p>

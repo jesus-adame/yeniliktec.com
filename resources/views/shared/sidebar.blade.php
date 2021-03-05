@@ -2,7 +2,7 @@
     <p class="uppercase text-gray-500 mb-3">Categorías</p>
     <hr>
     @foreach (\App\Models\Category::all() as $category)
-        <a class="block hover:underline py-2" href="{{ route('categories.show', [$category->slug]) }}">
+        <a class="block hover:underline py-2" href="{{ route('categories.show', ['category' => $category->slug]) }}">
             {{ $category->name }}
         </a>
     @endforeach

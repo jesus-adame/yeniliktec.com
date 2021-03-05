@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta')
+    <meta name="robots" content="noindex, nofollow">
+@endsection
+
 @section('content')
     <div class="container mx-auto">
         <form class="my-8" action="{{ route('posts.store') }}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">

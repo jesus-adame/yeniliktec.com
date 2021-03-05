@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
+@section('meta')
+    <meta name="robots" content="index, follow">
+@endsection
+
 @section('content')
     <div class="container mx-auto">
         <h1 class="text-3xl my-10">Categoría: {{ $category->name }}</h1>
 
         <div class="flex justify-between">
             <div class="w-2/3">
-                @foreach ($category->posts as $post)
+                @foreach ($category->posts->sortByDesc('created_at') as $post)
                     <div class="post shadow p-4 mb-5">
                         <a class="flex items-center justify-between" href="{{ route('posts.show', [$post->slug]) }}">
                             <div class="content">
@@ -25,7 +29,9 @@
                     </div>
                 @endif
             </div>
-            @include('shared.sidebar')
+            <div class="w-1/3">
+                @include('shared.sidebar')
+            </div>
         </div>
     </div>
 @endsection

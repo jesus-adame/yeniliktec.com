@@ -2,7 +2,7 @@
     <p class="uppercase text-gray-500 mb-3">Categorías</p>
     <hr>
     @foreach (\App\Models\Category::all() as $category)
-        <a class="block hover:underline py-2" href="{{ route('categories.show', [ 'category' => $category->id ]) }}">
+        <a class="block hover:underline py-2" href="{{ route('categories.show', [$category->slug]) }}">
             {{ $category->name }}
         </a>
     @endforeach
@@ -12,7 +12,7 @@
     <hr>
     <a class="block hover:underline py-2" href="{{ route('blog') }}">Todas las entradas</a>
     @foreach (\App\Models\Post::orderByDesc('created_at')->take(5)->get() as $post)
-        <a class="block hover:underline py-2" href="{{ route('posts.show', [ 'slug' => $post->slug ]) }}">
+        <a class="block hover:underline py-2" href="{{ route('posts.show', [$post->slug]) }}">
             {{ $post->title }}
         </a>
     @endforeach

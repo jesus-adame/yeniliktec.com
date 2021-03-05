@@ -4,6 +4,7 @@
 
 @section('meta')
     <meta name="description" content="{{ $post->excerpt }}">
+    <meta name="robots" content="index, follow">
 @endsection
 
 @section('content')

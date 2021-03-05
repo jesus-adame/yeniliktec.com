@@ -32,8 +32,10 @@ class CategoryController extends Controller
         return view('categories.create');
     }
 
-    public function show(Category $category)
+    public function show($category)
     {
+        $category = Category::where('slug', $category)->firstOrFail();
+        
         return view('categories.show', [
             'category' => $category,
         ]);

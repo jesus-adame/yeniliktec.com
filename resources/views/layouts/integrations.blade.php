@@ -1,10 +1,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SF9DVJ8LSW"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0JM5SRY3V"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SF9DVJ8LSW');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J0JM5SRY3V');
 </script>
 
 <!-- Facebook Pixel Code -->

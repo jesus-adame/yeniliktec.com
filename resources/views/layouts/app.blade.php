@@ -77,7 +77,7 @@
         <a
             class="z-20 py-3 p-4 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
-            href="https://wa.me/message/6MJV3KNO7ZKZK1"
+            href="https://wa.me/+525518040335"
             target="_blank" rel="nofollow">
             <img src="/images/icons/whatsapp-brands.svg" alt="Whatsapp Brand">
         </a>

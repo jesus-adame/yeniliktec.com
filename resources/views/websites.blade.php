@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Desarrollo Web - YenilikTec')
+
 @section('meta')
 <meta name="description" content="Ofecemos servicios profecionales de Diseño Web, creación de landing pages, e-commerce, sistemas web y más."/>
 <meta name="keywords" content="Páginas web, Sistemas Web, Landig Pages, e-commerce"/>

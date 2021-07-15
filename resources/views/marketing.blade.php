@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Marketing Digital - YenilikTec')
+
 @section('meta')
 <meta name="description" content="Servicios de Marketing Digital en Cuernavaca Morelos con SEO, SEM, estratégias de redes sociales y más."/>
 <meta name="keywords" content="Social Media Strategist, Branding, Community Manager, Analítica Web, Seo y sem"/>

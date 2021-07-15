@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Contacto - YenilikTec')
+
 @section('meta')
 <meta name="description" content="Contacto Yeniliktec | Agencia de Marketing Digital & Desarrollo Web."/>
 <meta name="keywords" content="Contacto Yeniliktec"/>

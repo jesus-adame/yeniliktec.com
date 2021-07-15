@@ -1,0 +1,56 @@
+body {
+    --tw-text-opacity: 1;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+p, li {
+    font-size: 1.1rem;
+}
+
+pre {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: rgba(199, 199, 199, 0.302);
+    border: solid 1px #c4c4c4;
+    border-radius: 3px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}

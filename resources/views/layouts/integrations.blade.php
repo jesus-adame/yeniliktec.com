@@ -1,20 +1,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<<<<<<< HEAD
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SF9DVJ8LSW"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SF9DVJ8LSW');
-=======
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0JM5SRY3V"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-188211268-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-J0JM5SRY3V');
->>>>>>> 2e90f780a22c94adfe234b0f3d25866ca40501ec
+  gtag('config', 'UA-188211268-1');
 </script>
 
 <!-- Facebook Pixel Code -->

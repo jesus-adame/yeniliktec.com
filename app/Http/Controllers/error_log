@@ -1,0 +1,4 @@
+[08-Jan-2021 01:35:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Routing\Controller' not found in /home1/mangelsd/yeniliktec.com/app/Http/Controllers/Controller.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/mangelsd/yeniliktec.com/app/Http/Controllers/Controller.php on line 10

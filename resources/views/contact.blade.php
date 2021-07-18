@@ -30,7 +30,7 @@
             @endif
             <form class="mx-auto mb-4 mt-5" action="/sendmail"
                 method="post"
-                @onsubmit="gtag('event', 'enviar', {'event_category': 'contacto', 'event_label': 'formulario', value': '0'});">
+                onsubmit="gtag('event', 'enviar', {'event_category': 'contacto', 'event_label': 'formulario', value': '100'});">
                 @csrf <input type="hidden" name="page" value="contact">
                 <label class="hidden" for="name">Nombre</label>
                 <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="name" placeholder="Nombre">

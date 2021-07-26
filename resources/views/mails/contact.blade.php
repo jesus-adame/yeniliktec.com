@@ -6,6 +6,8 @@
     <div class="body">
         <h3>Nombre:</h3>
         <p>{{ $name }}</p>
+        <h3> Phone:</h3>
+        <p>{{ $phone }}</p>
         <h3>Correo:</h3>
         <p>{{ $email }}</p>
         <h3>Mensaje</h3>

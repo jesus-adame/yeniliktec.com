@@ -37,6 +37,11 @@
                 @error('name')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
+                <label class="hidden" for="phone">Telefono</label>
+                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="phone" placeholder="Telefono">
+                @error('phone')
+                    <p class="text-red-400">{{ $message }}</p>
+                @enderror
                 <label class="hidden" for="name">Correo</label>
                 <input class="w-full mb-4 shadow border-none bg-gray-50" type="email" name="email" placeholder="E-mail">
                 @error('email')

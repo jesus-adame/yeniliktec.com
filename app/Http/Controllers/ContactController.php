@@ -18,6 +18,7 @@ class ContactController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|min:4',
+            'phone' => 'required|min:10|max:15',
             'email' => 'required|email',
             'message' => 'required|min:4',
             'page' => 'required',
@@ -36,6 +37,7 @@ class ContactController extends Controller
 
         $email = new ContactMail(
             $request->name,
+            $request->phone,
             $request->email,
             $request->message
         );

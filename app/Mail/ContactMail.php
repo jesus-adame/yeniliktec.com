@@ -15,6 +15,8 @@ class ContactMail extends Mailable
 
     public $name;
 
+    public $phone;
+
     public $email;
 
     public $content;
@@ -24,10 +26,11 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public function __construct(string $name, string $email, string $message)
+    public function __construct(string $name, string $phone, string $email, string $message)
     {
         $this->subject = "Información de contacto";
         $this->name = $name;
+        $this->phone = $phone;
         $this->email = $email;
         $this->content = $message;
     }

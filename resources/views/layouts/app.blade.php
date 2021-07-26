@@ -26,6 +26,11 @@
         @endproduction
     </head>
     <body class="font-sans antialiased cursor-default">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VH2MMG"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
         <div class="min-h-screen flex flex-col">
             <header class="header">
                 <livewire:navbar/>

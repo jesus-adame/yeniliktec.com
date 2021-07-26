@@ -13,7 +13,7 @@
     <div class="banner__content container mx-auto">
         <div class="md:w-1/2 mx-auto px-4">
             <h1 class="text-3xl md:text-5xl">AGENCIA DIGITAL DE MARKETING Y DESARROLLO WEB</h1>
-            <a class="button w-1/2 md:w-1/3" href="https://wa.me/message/6MJV3KNO7ZKZK1" target="_blank">Cotizar</a>
+            <a class="button w-1/2 md:w-1/3" href="https://wa.me/+52551804033" target="_blank">Cotizar</a>
         </div>
         <div class="figure md:w-1/2 mx-auto">
             <img src="/images/pc-design1.png" alt="Marketing" width="100%">

@@ -105,7 +105,7 @@
         </div>
     </div>
     <div class="w-full text-center my-5">
-        <a href="https://wa.me/527773447577" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-800 text-white py-4 px-9 mx-auto">SOLICITAR INFORMACIÓN</a>
+        <a id="whats-web-development" href="https://wa.me/+525518040335" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-800 text-white py-4 px-9 mx-auto">SOLICITAR INFORMACIÓN</a>
     </div>
 </div>
 @endsection

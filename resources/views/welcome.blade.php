@@ -46,7 +46,7 @@
                 <p class="text-2xl">Comunity Manager</p>
                 <p class="text-2xl">Generación de contactos</p>
             </div>
-            <a class="block w-full text-center font-bold shadow m-auto py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white" href="/marketing-digital">VER MÁS</a>
+            <a id="show-digital-marketing" class="block w-full text-center font-bold shadow m-auto py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white" href="/marketing-digital">VER MÁS</a>
         </div>
     </div>
     <div class="flex flex-wrap items-center justify-around mt-10">
@@ -63,7 +63,7 @@
                 <p class="text-2xl">Blogs</p>
                 <p class="text-2xl">Sistemas web</p>
             </div>
-            <a class="block text-center font-bold shadow w-full py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white" href="/sitios-web">VER MÁS</a>
+            <a id="show-web-development" class="block text-center font-bold shadow w-full py-3 px-9 bg-purple-900 hover:bg-purple-800 text-white" href="/sitios-web">VER MÁS</a>
         </div>
     </div>
 </div>

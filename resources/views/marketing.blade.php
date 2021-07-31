@@ -109,7 +109,7 @@
     </div>
     <br>
     <div class="w-full text-center my-5">
-        <a href="https://wa.me/527773447577" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto">SOLICITAR INFORMACIÓN</a>
+        <a id="info-marketing" href="https://wa.me/+525518040335" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto">SOLICITAR INFORMACIÓN</a>
     </div>
 </div>
 @endsection

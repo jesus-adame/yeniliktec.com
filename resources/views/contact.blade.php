@@ -28,7 +28,7 @@
                     {{ session()->get('success') }}
                 </div>
             @endif
-            <form class="mx-auto mb-4 mt-5" action="/sendmail"
+            <form id="contact-form" class="mx-auto mb-4 mt-5" action="/sendmail"
                 method="post"
                 onsubmit="gtag('event', 'enviar', {'event_category': 'contacto', 'event_label': 'formulario', 'value': '0'});">
                 @csrf <input type="hidden" name="page" value="contact">

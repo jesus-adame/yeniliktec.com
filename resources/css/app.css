@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './base.css';
+@import './splide.css';
 
 .container-sm {
     padding: 0 1rem;
@@ -17,17 +18,18 @@
 }
 
 .header {
-    height: 90px;
+    /* height: 90px; */
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,112,1) 29%, rgb(0, 204, 255) 92%);
+    background: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(36,36,112,1) 29%, rgb(0, 204, 255) 92%);
 }
 
 /*diseño Banner*/
 
 .banner {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,112,1) 29%, rgb(0, 204, 255) 92%);
+    background: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(36,36,112,1) 29%, rgb(0, 204, 255) 92%);
     color: #fff;
-    padding: 2rem 0rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
     height: auto;
     max-height: 700px;
     width: 100%;

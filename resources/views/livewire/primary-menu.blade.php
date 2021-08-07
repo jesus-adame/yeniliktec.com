@@ -3,7 +3,7 @@
         <div class="flex justify-between w-full">
             <!-- Logo -->
             <div class="flex items-center">
-                <a class="inline-block" style="height: 7rem;padding-top: .3rem;" href="/">
+                <a class="inline-block" style="height: 7rem;" href="/">
                     <img src="/images/logo_yeniliktec_lg.png" alt="Logo Yeniliktec" class="h-full">
                 </a>
             </div>

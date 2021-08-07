@@ -22,6 +22,7 @@
         "tailwindcss": "^2.0.1"
     },
     "dependencies": {
+        "@splidejs/splide": "^2.4.21",
         "ajv": "^6.8.1"
     }
 }

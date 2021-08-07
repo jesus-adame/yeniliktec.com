@@ -8,10 +8,10 @@
 @endsection
 
 @section('content')
+<div class="flex justify-center items-center w-full banner" style="height: 100px;">
+    <h1 class="text-white text-3xl uppercase">{{ $post->title }}</h1>
+</div>
 <div class="container mx-auto my-10">
-    <div class="flex justify-center items-center w-full banner" style="height: 100px;">
-        <h1 class="text-white text-3xl uppercase">{{ $post->title }}</h1>
-    </div>
     <div class="flex flex-wrap justify-between">
         <div class="lg:w-2/3">
             <article class="shadow px-6 pt-6 pb-8">

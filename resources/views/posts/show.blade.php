@@ -10,11 +10,11 @@
 @section('content')
 <div class="container mx-auto my-10">
     <div class="flex flex-wrap justify-between">
-        <header>
-            <div class="flex justify-center items-center w-full banner" style="height: 100px;">
+        <div class="flex justify-center items-center w-full banner" style="height: 100px;">
+            <header>
                 <h1 class="text-white text-3xl uppercase">{{ $post->title }}</h1>
-            </div>
-        </header>
+            </header>
+        </div>
         <div class="lg:w-2/3">
             <article class="shadow px-6 pt-6 pb-8">
                 @if (session('status'))

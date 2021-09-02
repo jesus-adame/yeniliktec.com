@@ -24,15 +24,10 @@ class ContactController extends Controller
             'page' => 'required',
         ]);
 
-        $redirectUrl = route('welcome') . '#contacto';
-
-        if ($request->page == 'contact') {
-            $redirectUrl = route('contact');
-        }
-
         if ($validator->fails()) {
-            return redirect($redirectUrl)
-                ->withErrors($validator);
+            return redirect('contact')
+                ->withErrors($validator)
+                ->with("errors", "Por favor completa todos los campos");
         }
 
         $email = new ContactMail(
@@ -44,7 +39,6 @@ class ContactController extends Controller
 
         Mail::to('contacto@yeniliktec.com')->send($email);
 
-        return redirect($redirectUrl)
-            ->with("success", "Gracias por tu mensaje, en breve nos comunicamos contigo.");
+        return redirect()->route('contact.tankyou');
     }
 }

@@ -52,3 +52,4 @@ Route::put('/comments/{comment}', [ CommentController::class, 'update' ])->name(
 Route::delete('/comments/{comment}', [ CommentController::class, 'destroy' ])->name('comments.destroy');
 
 Route::view('/theme/view', 'theme');
+Route::view('/servicios-generales', 'theme');

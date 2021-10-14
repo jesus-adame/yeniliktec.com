@@ -10,6 +10,8 @@
         <p>{{ $phone }}</p>
         <h3>Correo:</h3>
         <p>{{ $email }}</p>
+        <h3>Empresa:</h3>
+        <p>{{ $company }}</p>
         <h3>Mensaje</h3>
         <p>{{ $content }}</p>
     </div>

@@ -8,6 +8,6 @@ class ThankYouController extends Controller
 {
     public function index()
     {
-        return view('thank-you-page');
+        return view('thank-you-page', [ "title" => 'gracias' ]);
     }
 }

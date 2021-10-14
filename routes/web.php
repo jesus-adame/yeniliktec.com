@@ -1,14 +1,15 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\WelcomeController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\ThankYouController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::get('/blog/{slug}', [ PostController::class, 'show' ])->name('posts.show'
 Route::get('/contacto', ContactController::class)->name('contact');
 
 Route::post('/sendmail', [ ContactController::class, 'sendMail' ])->name('send.contact.mail');
+Route::get('/gracias-por-tu-mensaje', [ThankYouController::class, 'index'])->name('contact.tankyou');
 
 Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
@@ -48,3 +50,6 @@ Route::post('/comments', [ CommentController::class, 'store' ])->name('comments.
 Route::get('/comments/{comment}/edit', [ CommentController::class, 'edit' ])->name('comments.edit');
 Route::put('/comments/{comment}', [ CommentController::class, 'update' ])->name('comments.update');
 Route::delete('/comments/{comment}', [ CommentController::class, 'destroy' ])->name('comments.destroy');
+
+Route::view('/theme/view', 'theme');
+Route::view('/servicios-generales', 'theme');

@@ -29,7 +29,8 @@
                     {{ session()->get('success') }}
                 </div>
             @endif
-            <form id="contact-form" class="mx-auto mb-4 mt-5" action="/sendmail"
+            <form id="contact-form" class="mx-auto mb-4 mt-5"
+                action="{{ route('send.contact.mail') }}"
                 method="post"
                 onsubmit="gtag('event', 'enviar', {'event_category': 'contacto', 'event_label': 'formulario', 'value': '0'});">
                 @csrf <input type="hidden" name="page" value="contact">
@@ -38,14 +39,25 @@
                 @error('name')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
-                <label class="hidden" for="phone">Telefono</label>
-                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="phone" placeholder="Telefono">
-                @error('phone')
-                    <p class="text-red-400">{{ $message }}</p>
-                @enderror
-                <label class="hidden" for="name">Correo</label>
-                <input class="w-full mb-4 shadow border-none bg-gray-50" type="email" name="email" placeholder="E-mail">
-                @error('email')
+                <div class="flex space-x-4 items-center">
+                    <div class="w-1/2">
+                        <label class="hidden" for="phone">Telefono</label>
+                        <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="phone" placeholder="Telefono">
+                        @error('phone')
+                            <p class="text-red-400">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div class="w-1/2">
+                        <label class="hidden" for="email">Correo</label>
+                        <input class="w-full mb-4 shadow border-none bg-gray-50" type="email" name="email" placeholder="E-mail">
+                        @error('email')
+                            <p class="text-red-400">{{ $message }}</p>
+                        @enderror
+                    </div>
+                </div>
+                <label class="hidden" for="company">Empresa</label>
+                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="company" placeholder="Empresa">
+                @error('company')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
                 <label class="hidden" for="message">Mensaje</label>
@@ -53,10 +65,23 @@
                 @error('message')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
-                <button class="bg-purple-900 my-4 px-6 py-2 uppercase w-full text-white shadow">Enviar</button>
+                <button class="bg-purple-900 my-4 px-6 py-2 uppercase w-full text-white shadow"
+                    class="g-recaptcha" 
+                    data-sitekey="6LfBacwcAAAAAAZDJi19fhIgIeORy76ruYla3Naf" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Enviar</button>
             </form>
         </div>
     </div>
     <div class="py-5"></div>
 </div>
 @endsection
+
+@push('scripts')
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
+    </script>
+@endpush

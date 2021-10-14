@@ -17,21 +17,16 @@ class ContactController extends Controller
     public function sendMail(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|min:4',
-            'phone' => 'required|min:10|max:15',
-            'email' => 'required|email',
+            'name'    => 'required|min:4',
+            'phone'   => 'required|min:10|max:17',
+            'email'   => 'required|email',
             'message' => 'required|min:4',
-            'page' => 'required',
+            'page'    => 'required',
         ]);
 
-        $redirectUrl = route('welcome') . '#contacto';
-
-        if ($request->page == 'contact') {
-            $redirectUrl = route('contact');
-        }
-
         if ($validator->fails()) {
-            return redirect($redirectUrl)
+            return redirect()
+                ->route('contact')
                 ->withErrors($validator);
         }
 
@@ -39,12 +34,12 @@ class ContactController extends Controller
             $request->name,
             $request->phone,
             $request->email,
+            $request->company,
             $request->message
         );
 
         Mail::to('contacto@yeniliktec.com')->send($email);
 
-        return redirect($redirectUrl)
-            ->with("success", "Gracias por tu mensaje, en breve nos comunicamos contigo.");
+        return redirect()->route('contact.tankyou');
     }
 }

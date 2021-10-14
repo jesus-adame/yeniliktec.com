@@ -35,33 +35,40 @@
                 onsubmit="gtag('event', 'enviar', {'event_category': 'contacto', 'event_label': 'formulario', 'value': '0'});">
                 @csrf <input type="hidden" name="page" value="contact">
                 <label class="hidden" for="name">Nombre</label>
-                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="name" placeholder="Nombre">
+                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="name" placeholder="Nombre" value="{{ old('name') }}">
                 @error('name')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
                 <div class="flex space-x-4 items-center">
                     <div class="w-1/2">
                         <label class="hidden" for="phone">Telefono</label>
-                        <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="phone" placeholder="Telefono">
+                        <div class="flex space-x-2">
+                            <select class="w-20 mb-4 shadow border-none bg-gray-50" name="phone_code" id="phone_code">
+                                @foreach ($phoneCodes as $key => $code)
+                                    <option value="{{ $key }}" @if (old('phone_code', 'MX') == $key) selected @endif>{{ $key }} - {{ $code }}</option>
+                                @endforeach
+                            </select>
+                            <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="phone" placeholder="Telefono" value="{{ old('phone') }}">
+                        </div>
                         @error('phone')
                             <p class="text-red-400">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="w-1/2">
                         <label class="hidden" for="email">Correo</label>
-                        <input class="w-full mb-4 shadow border-none bg-gray-50" type="email" name="email" placeholder="E-mail">
+                        <input class="w-full mb-4 shadow border-none bg-gray-50" type="email" name="email" placeholder="E-mail" value="{{ old('email') }}">
                         @error('email')
                             <p class="text-red-400">{{ $message }}</p>
                         @enderror
                     </div>
                 </div>
                 <label class="hidden" for="company">Empresa</label>
-                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="company" placeholder="Empresa">
+                <input class="w-full mb-4 shadow border-none bg-gray-50" type="text" name="company" placeholder="Empresa" value="{{ old('company') }}">
                 @error('company')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror
                 <label class="hidden" for="message">Mensaje</label>
-                <textarea class="w-full mb-4 shadow border-none bg-gray-50" name="message" rows="3" placeholder="Mensaje"></textarea>
+                <textarea class="w-full mb-4 shadow border-none bg-gray-50" name="message" rows="3" placeholder="Mensaje">{{ old('message') }}</textarea>
                 @error('message')
                     <p class="text-red-400">{{ $message }}</p>
                 @enderror

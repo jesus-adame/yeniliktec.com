@@ -22,13 +22,13 @@
                     </div>
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
                         <em class="ti-announcement text-primary h1"></em>
-                        <h3 class="mt-4 text-capitalize h5 ">Desarrollo Web</h3>
+                        <h3 class="mt-4 text-capitalize h5 ">Marketing Digital</h3>
                         <ul class="text-decoration-none list-unstyled">
-                            <li>Paginas web</li>
-                            <li>tiendas en línea</li>
-                            <li>Paginas de captura</li>
-                            <li>Blogs</li>
-                            <li>Sistemas web</li>
+                            <li>Generación de contenido</li>
+                            <li>Campañas en Google Ads</li>
+                            <li>Campañas en Facebook Ads</li>
+                            <li>Comunity Manager</li>
+                            <li>Generación de contactos</li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">

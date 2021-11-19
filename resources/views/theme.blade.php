@@ -2,11 +2,8 @@
 
 @section('content')
     @include('shared.navbar')
-    <!--====================================
-      =            Hero Section            =
-      =====================================-->
+
     @include('shared.slider')
-    <!--====  End of Hero Section  ====-->
 
     <section class="section pt-0 relative pull-top">
         <div class="container">
@@ -170,35 +167,10 @@
     </section>
     <!--====  End of Feature Grid  ====-->
 
-    <!--=================================
-      =            Video Promo            =
-      ==================================-->
-    {{-- <section class="video-promo section bg-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="content-block">
-                        <!-- Heading -->
-                        <h2>Watch Our Promo Video</h2>
-                        <!-- Promotional Speech -->
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet
-                            et,
-                            porttitor at sem. Vivamus </p>
-                        <!-- Popup Video -->
-                        <a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
-                            <em class="ti-control-play video"></em>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!--====  End of Video Promo  ====-->
-
     <!--==============================
       =            Services            =
       ===============================-->
-    {{-- <section class="service section bg-gray">
+    <section class="service section bg-gray">
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-lg-12">
@@ -273,10 +245,10 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!--====  End of Services  ====-->
 
-    {{-- <section class="call-to-action-app section bg-blue">
+    <section class="call-to-action-app section bg-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -309,11 +281,8 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
-    <!--============================
-      =            Footer            =
-      =============================-->
     @include('shared.footer')
 
     <!-- To Top -->

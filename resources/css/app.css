@@ -170,3 +170,7 @@
     padding: 0.5rem;
     color: #2b2b2b;
 }
+
+.main-nav .navbar-nav .nav-item .nav-link {
+    color: #585858;
+}

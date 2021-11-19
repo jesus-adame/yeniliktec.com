@@ -38,13 +38,13 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown @@pages">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nuestros Proyectos
+                    <a class="nav-link dropdown-toggle" href="{{ route('marketing') }}" data-toggle="dropdown">Nuestros Proyectos
                         <span><em class="ti-angle-down"></em></span>
                     </a>
                     <!-- Dropdown list -->
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item @@team" href="{{ route('websites') }}">Sitio Web</a></li>
-                        <li><a class="dropdown-item @@career" href="{{ route('websites') }}">Marketing</a></li>
+                        <li><a class="dropdown-item @@career" href="{{ route('marketing') }}">Marketing</a></li>
                         <li><a class="dropdown-item @@blog" href="{{ route('websites') }}">Analitica Web</a></li>
                     </ul>
                 </li>

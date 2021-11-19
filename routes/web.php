@@ -51,5 +51,4 @@ Route::get('/comments/{comment}/edit', [ CommentController::class, 'edit' ])->na
 Route::put('/comments/{comment}', [ CommentController::class, 'update' ])->name('comments.update');
 Route::delete('/comments/{comment}', [ CommentController::class, 'destroy' ])->name('comments.destroy');
 
-Route::view('/theme/view', 'theme');
 Route::view('/servicios-generales', 'theme');

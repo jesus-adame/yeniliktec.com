@@ -13,30 +13,33 @@
             <div class="rounded shadow p-5 bg-white">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-                        <i class="ti-paint-bucket text-primary h1"></i>
-                        <h3 class="mt-4 text-capitalize h5 ">Marketing Digital</h3>
-                        <p class="regular text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non,
-                            recusandae
-                            tempore ipsam dignissimos molestias.
-                        </p>
+                        <em class="ti-desktop text-primary h1"></em>
+                        <h3 class="mt-4 text-capitalize h5 ">Desarrollo Web</h3>
+                        <ul class="text-decoration-none list-unstyled">
+                            <li>Paginas web</li>
+                            <li>tiendas en línea</li>
+                            <li>Paginas de captura</li>
+                            <li>Blogs</li>
+                            <li>Sistemas web</li>
+                        </ul>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-                        <i class="ti-shine text-primary h1"></i>
+                        <em class="ti-announcement text-primary h1"></em>
                         <h3 class="mt-4 text-capitalize h5 ">Desarrollo Web</h3>
-                        <p class="regular text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non,
-                            recusandae
-                            tempore ipsam dignissimos molestias.
-                        </p>
+                        <ul class="text-decoration-none list-unstyled">
+                            <li>Paginas web</li>
+                            <li>tiendas en línea</li>
+                            <li>Paginas de captura</li>
+                            <li>Blogs</li>
+                            <li>Sistemas web</li>
+                        </ul>
                     </div>
                     <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
-                        <i class="ti-thought text-primary h1"></i>
+                        <em class="ti-thought text-primary h1"></em>
                         <h3 class="mt-4 text-capitalize h5 ">Analítica Web</h3>
                         <p class="regular text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non,
-                            recusandae
-                            tempore ipsam dignissimos molestias.
+                            El servicio de analítica web que través de metodologías y frameworks recopilará datos fundamentales de tus productos e inversiones publicitarias,
+                            esto servirá para medir de manera real y concreta la efectividad.
                         </p>
                     </div>
                 </div>
@@ -90,37 +93,37 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/amzn-ads.png" alt="Amazon Ads">
+                        <img class="h-full" src="/images/carousel/amzn-ads.png" alt="Amazon Ads">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/analytics.png" alt="Google Analytics">
+                        <img class="h-full" src="/images/carousel/analytics.png" alt="Google Analytics">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/datastudio.png" alt="Google Data Studio">
+                        <img class="h-full" src="/images/carousel/datastudio.png" alt="Google Data Studio">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/doubleclick-search.png" alt="Double Click Search">
+                        <img class="h-full" src="/images/carousel/doubleclick-search.png" alt="Double Click Search">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/facebook.png" alt="Facebook">
+                        <img class="h-full" src="/images/carousel/facebook.png" alt="Facebook">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/amzn-ads.png" alt="Amazon Ads">
+                        <img class="h-full" src="/images/carousel/amzn-ads.png" alt="Amazon Ads">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/google-ads.png" alt="Google Ads">
+                        <img class="h-full" src="/images/carousel/google-ads.png" alt="Google Ads">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/linkedin.png" alt="LinkedIn">
+                        <img class="h-full" src="/images/carousel/linkedin.png" alt="LinkedIn">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/mailchimp.png" alt="Mailchimp">
+                        <img class="h-full" src="/images/carousel/mailchimp.png" alt="Mailchimp">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/mercadoads.png" alt="Mercado Ads">
+                        <img class="h-full" src="/images/carousel/mercadoads.png" alt="Mercado Ads">
                     </li>
                     <li class="splide__slide flex items-center">
-                        <img src="/images/carousel/twitter.png" alt="Twitter">
+                        <img class="h-full" src="/images/carousel/twitter.png" alt="Twitter">
                     </li>
                 </ul>
             </div>
@@ -183,7 +186,7 @@
                             porttitor at sem. Vivamus </p>
                         <!-- Popup Video -->
                         <a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
-                            <i class="ti-control-play video"></i>
+                            <em class="ti-control-play video"></em>
                         </a>
                     </div>
                 </div>
@@ -336,12 +339,12 @@
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
         let config = {
-            perPage: 5,
+            type: 'loop',
             perMove: 1,
-            height: '150px',
-            rewind: true,
+            height: '60px',
+            autoWidth: true,
             autoplay: true,
-            interval: 2000,
+            interval: 1500,
             arrows: false,
             pauseOnHover: false,
             speed: 500,

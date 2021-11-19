@@ -1,20 +1,23 @@
+
+
+
 <footer>
     <div class="footer-main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
                     <div class="block">
-                        <a href="index.html"><img src="/theme/images/logo-alt.png" alt="footer-logo"></a>
+                        <a href="index.html"><img src="/theme/images/logo_blanco_yeniliktec.png" alt="footer-logo"></a>
                         <!-- Social Site Icons -->
                         <ul class="social-icon list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/themefisher"><i class="ti-facebook"></i></a>
+                                <a href="https://www.facebook.com/yeniliktec" target="_blank"><em class="ti-facebook"></em></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://twitter.com/themefisher"><i class="ti-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/yeniliktec/" target="_blank"><em class="ti-linkedin"></em></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.instagram.com/themefisher/"><i class="ti-instagram"></i></a>
+                                <a href="https://www.instagram.com/yeniliktec/?hl=es-la" target="_blank"><em class="ti-instagram"></em></a>
                             </li>
                         </ul>
                     </div>
@@ -59,13 +62,13 @@
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Company</h6>
+                        <h6>Compañia</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="about.html">Nosotros</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="team.html">Equipo</a></li>
+                            <li><a href="privacy-policy.html">Politica de privacidad</a></li>
                         </ul>
                     </div>
                 </div>

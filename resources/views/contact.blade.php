@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.main')
+@include('shared.navbar')
 
 @section('title', 'Contacto - YenilikTec')
 
@@ -14,7 +15,7 @@
     <div class="py-6"></div>
     <div class="flex flex-wrap">
         <div class="md:w-1/2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8092710947944!2d-99.24470158548607!3d18.93983456116105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf2b4feaa1b7%3A0xcce9bbd77d53f705!2sYeniliktec%20Agencia%20Digital!5e0!3m2!1ses-419!2smx!4v1626322467205!5m2!1ses-419!2smx" 
+            <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8092710947944!2d-99.24470158548607!3d18.93983456116105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf2b4feaa1b7%3A0xcce9bbd77d53f705!2sYeniliktec%20Agencia%20Digital!5e0!3m2!1ses-419!2smx!4v1626322467205!5m2!1ses-419!2smx" 
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="md:w-1/2 px-4">
@@ -82,7 +83,10 @@
     </div>
     <div class="py-5"></div>
 </div>
-@endsection
+<!--============================
+  =            Footer            =
+=============================-->
+      @include('shared.footer')
 
 @push('scripts')
     <script src="https://www.google.com/recaptcha/api.js"></script>

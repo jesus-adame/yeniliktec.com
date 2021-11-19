@@ -167,121 +167,9 @@
     </section>
     <!--====  End of Feature Grid  ====-->
 
-    <!--==============================
-      =            Services            =
-      ===============================-->
-    <section class="service section bg-gray">
-        <div class="container-fluid p-0">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>An Interface For Lifestyle</h2>
-                        <p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small
-                                Apps</a> makes
-                            it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg-6 align-self-center">
-                    <!-- Feature Image -->
-                    <div class="service-thumb left" data-aos="fade-right">
-                        <img class="img-fluid" src="/theme/images/feature/iphone-ipad.jpg" alt="iphone-ipad">
-                    </div>
-                </div>
-                <div class="col-lg-5 mr-auto align-self-center">
-                    <div class="service-box">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 col-xs-12">
-                                <!-- Service 01 -->
-                                <div class="service-item">
-                                    <!-- Icon -->
-                                    <i class="ti-bookmark"></i>
-                                    <!-- Heading -->
-                                    <h3>Easy Prototyping</h3>
-                                    <!-- Description -->
-                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet
-                                        quam id dui</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12">
-                                <!-- Service 01 -->
-                                <div class="service-item">
-                                    <!-- Icon -->
-                                    <i class="ti-pulse"></i>
-                                    <!-- Heading -->
-                                    <h3>Sensor Bridge</h3>
-                                    <!-- Description -->
-                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet
-                                        quam id dui</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12">
-                                <!-- Service 01 -->
-                                <div class="service-item">
-                                    <!-- Icon -->
-                                    <i class="ti-bar-chart"></i>
-                                    <!-- Heading -->
-                                    <h3>Strategist</h3>
-                                    <!-- Description -->
-                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet
-                                        quam id dui</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12">
-                                <!-- Service 01 -->
-                                <div class="service-item">
-                                    <!-- Icon -->
-                                    <i class="ti-panel"></i>
-                                    <!-- Heading -->
-                                    <h3>Art Direction</h3>
-                                    <!-- Description -->
-                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet
-                                        quam id dui</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--====  End of Services  ====-->
+    {{-- @include('shared.services') --}}
 
-    <section class="call-to-action-app section bg-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>It's time to change your mind</h2>
-                    <p>Download over 2 million humans .Get <a
-                            href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small
-                            Apps</a> free forever!
-                        <br>We say you won’t look back.
-                    </p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="" class="btn btn-rounded-icon">
-                                <i class="ti-apple"></i>
-                                Iphone
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="" class="btn btn-rounded-icon">
-                                <i class="ti-android"></i>
-                                Android
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="" class="btn btn-rounded-icon">
-                                <i class="ti-microsoft-alt"></i>
-                                Windows
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{-- @include('shared.calltoaction') --}}
 
     @include('shared.footer')
 
@@ -289,19 +177,6 @@
     <div class="scroll-top-to" style="left: 20px; right: auto">
         <i class="ti-angle-up"></i>
     </div>
-
-    <!-- JAVASCRIPTS -->
-    <script src="/theme/plugins/jquery/jquery.min.js"></script>
-    <script src="/theme/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="/theme/plugins/slick/slick.min.js"></script>
-    <script src="/theme/plugins/fancybox/jquery.fancybox.min.js"></script>
-    <script src="/theme/plugins/syotimer/jquery.syotimer.min.js"></script>
-    <script src="/theme/plugins/aos/aos.js"></script>
-    <!-- google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-    <script src="/theme/plugins/google-map/gmap.js"></script>
-
-    <script src="/theme/js/script.js"></script>
 @endsection
 
 @push('scripts')

@@ -3,8 +3,8 @@
 @section('title', 'Blog - YenilikTec')
 
 @section('meta')
-<meta name="description" content="YenilikTec - Blog y noticias de marketing digital, desarrollo web y tecnologías.">
-<meta name="robots" content="index, follow">
+    <meta name="description" content="YenilikTec - Blog y noticias de marketing digital, desarrollo web y tecnologías.">
+    <meta name="robots" content="index, follow">
 @endsection
 
 @section('content')

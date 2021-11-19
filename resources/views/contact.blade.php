@@ -10,6 +10,7 @@
 
 @section('content')
     @include('shared.navbar')
+
     <div class="mx-auto px-4 my-5">
         <div class="py-6"></div>
         <div class="container-fluid flex flex-wrap">
@@ -73,24 +74,22 @@
                         <p class="text-red-400">{{ $message }}</p>
                     @enderror
 
-                    <button class="bg-purple-900 my-4 px-6 py-2 uppercase w-full text-white shadow"
+                    <button class="bg-blue-900 my-4 px-6 py-2 uppercase w-full text-white shadow"
                         class="g-recaptcha" 
                         data-sitekey="6LfBacwcAAAAAAZDJi19fhIgIeORy76ruYla3Naf" 
                         data-callback='onSubmit' 
                         data-action='submit'>Enviar</button>
                 </form>
             </div>
-            <div class="w-full md:w-1/2 mb-5">
+            <div class="w-full md:w-1/2 mb-5 rounded-md overflow-hidden">
                 <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8092710947944!2d-99.24470158548607!3d18.93983456116105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf2b4feaa1b7%3A0xcce9bbd77d53f705!2sYeniliktec%20Agencia%20Digital!5e0!3m2!1ses-419!2smx!4v1626322467205!5m2!1ses-419!2smx" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-        <div class="py-5"></div>
     </div>
-    <!--============================
-    =            Footer            =
-    =============================-->
+
     @include('shared.footer')
+@endsection    
 
 @push('scripts')
     <script src="https://www.google.com/recaptcha/api.js"></script>

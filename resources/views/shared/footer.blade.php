@@ -1,6 +1,3 @@
-
-
-
 <footer>
     <div class="footer-main">
         <div class="container">
@@ -30,7 +27,7 @@
                         <ul>
                             <li><a href="/marketing-digital">Marketing digital</a></li>
                             <li><a href="/sitios-web">Sitios Web</a></li>
-                            <li><a href="FAQ.html">FAQs</a></li>
+                            {{-- <li><a href="FAQ.html">FAQs</a></li> --}}
                         </ul>
                     </div>
                 </div>
@@ -65,10 +62,10 @@
                         <h6>Compañia</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                            <li><a href="team.html">Equipo</a></li>
-                            <li><a href="privacy-policy.html">Politica de privacidad</a></li>
+                            {{-- <li><a href="about.html">Nosotros</a></li> --}}
+                            <li><a href="{{ route('contact') }}">Contacto</a></li>
+                            <li><a href="{{ route('about') }}">Equipo</a></li>
+                            <li><a href="{{ route('terms.show') }}">Politica de privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,8 +73,8 @@
         </div>
     </div>
     <div class="text-center text-light bg-dark py-4">
-        <script>
-            document.write(new Date().getFullYear())
-        </script>. Designed &amp; Developed by <a href="https://yeniliktec.com/">Yeniliktec</a></small class="text-secondary">
+        </small  class="text-secondary">{{ date('Y') }} Designed &amp; Developed by <a href="https://yeniliktec.com/">Yeniliktec &copy;</a></small>
     </div>
 </footer>
+
+@include('shared.new-scripts')

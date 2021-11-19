@@ -24,7 +24,7 @@
                 <p class="text-white mb-5">
                     REGISTRISTRATE AHORA Y OBTEN HASTA UN 10% DE DESCUENTO EN CUALQUIERA DE NUESTROS SERVICIOS COMO CLIENTE NUEVO
                 </p>
-                <a href="FAQ.html" class="btn btn-main-md .mb-5.25!important">OBTENER DESCUENTO</a>
+                <a href="{{ route('contact') }}" class="btn btn-main-md .mb-5.25!important">OBTENER DESCUENTO</a>
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
                 <div class="relative hidden md:block" style="height: 500px">

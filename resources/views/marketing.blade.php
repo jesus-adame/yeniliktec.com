@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('title', 'Marketing Digital - YenilikTec')
 
@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+    @include('shared.navbar')
     @include('components.breadcrumb')
 
     <div class="container mx-auto my-10">
@@ -18,7 +19,7 @@
                     <img class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Social Media Strategist</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Social Media Strategist</h3>
                     <p class="text-xl text-justify">
                         Desarrollamos estrategias que te ayudarán a generar mayor
                         reconocimiento de marca a través de distintos canales de
@@ -33,7 +34,7 @@
                     <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Branding</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Branding</h3>
                     <p class="text-xl text-justify">
                         Creamos imágenes corporativas por medio de nuestros especialistas.
                         Desarrollamos logos, banners y animaciones para que tu marca logre una
@@ -49,7 +50,7 @@
                     <img class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Inbound Marketing</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Inbound Marketing</h3>
                     <p class="text-xl text-justify">
                         Realizamos estrategias a la medida para la generación de clientes potenciales
                         por medio de embudos de ventas que te ayudaran a dar el seguimiento correcto a
@@ -64,7 +65,7 @@
                     <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Community Manager</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Community Manager</h3>
                     <p class="text-xl text-justify">
                         Ofrecemos servicios de implementación de estrategias de contenido en redes
                         sociales, con la finalidad de ayudar a crear una comunidad de seguidores de tu
@@ -79,7 +80,7 @@
                     <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Posicionamiento SEO & SEM</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Posicionamiento SEO & SEM</h3>
                     <p class="text-xl text-justify">
                         Posicionamos tu sitio web en distintos motores de búsqueda por medio de
                         estrategias SEO combinado con campañas SEM. Esto ayudará a que tu público
@@ -94,7 +95,7 @@
                     <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="70%">
                 </div>
                 <div class="content w-full p-4 md:w-1/2">
-                    <h3 class="text-purple-900 pb-4 font-bold">Analítica Web</h3>
+                    <h3 class="text-blue-900 pb-4 font-bold">Analítica Web</h3>
                     <p class="text-xl text-justify">
                         Nos importa el crecimiento de tu negocio mediante nuestros servicios,
                         por eso ofrecemos el servicio de analítica web, que a través de metodologías y
@@ -109,7 +110,10 @@
         </div>
         <br>
         <div class="w-full text-center my-5">
-            <a id="info-marketing" href="https://wa.me/+525518040335" target="_blank" rel="nofollow" class="bg-purple-900 hover:bg-purple-700 text-white py-3 px-8 font-bold mx-auto">SOLICITAR INFORMACIÓN</a>
+            <a id="info-marketing" href="https://wa.me/+525518040335" target="_blank" rel="nofollow"
+                class="bg-blue-900 hover:bg-blue-700 text-white py-3 px-8 font-bold mx-auto rounded">SOLICITAR INFORMACIÓN</a>
         </div>
     </div>
+
+    @include('shared.footer')
 @endsection

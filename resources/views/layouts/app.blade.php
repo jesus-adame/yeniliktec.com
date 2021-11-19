@@ -15,6 +15,17 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+        <!-- PLUGINS CSS STYLE -->
+        <link rel="stylesheet" href="/theme/plugins/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="/theme/plugins/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="/theme/plugins/slick/slick.css">
+        <link rel="stylesheet" href="/theme/plugins/slick/slick-theme.css">
+        <link rel="stylesheet" href="/theme/plugins/fancybox/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="/theme/plugins/aos/aos.css">
+
+        <!-- CUSTOM CSS -->
+        <link href="/theme/css/style.css" rel="stylesheet">
+
         @livewireStyles
 
         <!-- Scripts -->
@@ -30,25 +41,24 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VH2MMG"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+        @include('shared.navbar')
         
         <div class="min-h-screen flex flex-col">
-            <header class="header">
-                <livewire:navbar/>
-            </header>
             
             <!-- Page Content -->
             <main class="flex-1">
                 @yield('content')
             </main>
 
-            @include('layouts.old-footer')
+            @include('shared.footer')
         </div>
 
         @stack('modals')
 
         {{-- whatsapp --}}
         <a
-            class="z-20 py-3 p-4 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"
+            class="z-20 py-3 p-3 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
             href="https://wa.me/+525518040335"
             target="_blank" rel="nofollow">
@@ -56,7 +66,7 @@
         </a>
         {{-- messenger --}}
         <a
-            class="z-20 py-3 p-4 rounded-full bg-blue-500 hover:bg-blue-600 fixed bottom-28 right-9 outline-none flex items-center content-center"
+            class="z-20 py-3 p-3 rounded-full bg-blue-500 hover:bg-blue-600 fixed bottom-28 right-9 outline-none flex items-center content-center"
             style="width: 4.2rem; height: 4.2rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px"
             href="https://m.me/yeniliktec"
             target="_blank" rel="nofollow">

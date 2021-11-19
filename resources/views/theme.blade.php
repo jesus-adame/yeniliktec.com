@@ -56,7 +56,7 @@
                 <div class="col-lg-6 ml-auto justify-content-center">
                     <!-- Feature Mockup -->
                     <div class="image-content" data-aos="fade-right">
-                        <img class="img-fluid" src="/theme/images/feature/feature-new-01.jpg" alt="iphone">
+                        <img class="img-fluid" src="/images/content-marketing.png" alt="iphone">
                     </div>
                 </div>
                 <div class="col-lg-6 mr-auto align-self-center">
@@ -162,7 +162,7 @@
                 <div class="col-lg-6 mr-auto justify-content-center">
                     <!-- Feature mockup -->
                     <div class="image-content" data-aos="fade-left">
-                        <img class="img-fluid" src="/theme/images/feature/feature-new-02.jpg" alt="ipad">
+                        <img class="img-fluid" src="/images/mockup-pc.png" alt="ipad">
                     </div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
     <!--==============================
       =            Services            =
       ===============================-->
-    <section class="service section bg-gray">
+    {{-- <section class="service section bg-gray">
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-lg-12">
@@ -273,10 +273,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--====  End of Services  ====-->
 
-    <section class="call-to-action-app section bg-blue">
+    {{-- <section class="call-to-action-app section bg-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -309,7 +309,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!--============================
       =            Footer            =

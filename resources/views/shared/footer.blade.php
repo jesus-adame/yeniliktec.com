@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
                     <div class="block">
-                        <a href="index.html"><img src="/theme/images/logo_blanco_yeniliktec.png" alt="footer-logo"></a>
+                        <a href="/"><img src="/theme/images/logo_blanco_yeniliktec.png" alt="footer-logo"></a>
                         <!-- Social Site Icons -->
                         <ul class="social-icon list-inline">
                             <li class="list-inline-item">
@@ -25,11 +25,11 @@
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Product</h6>
+                        <h6>Servicios</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="team.html">Teams</a></li>
-                            <li><a href="blog.html">Blogs</a></li>
+                            <li><a href="/marketing-digital">Marketing digital</a></li>
+                            <li><a href="/sitios-web">Sitios Web</a></li>
                             <li><a href="FAQ.html">FAQs</a></li>
                         </ul>
                     </div>
@@ -37,16 +37,16 @@
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Resources</h6>
+                        <h6>Acceso</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="sign-up.html">Singup</a></li>
-                            <li><a href="sign-in.html">Login</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Singup</a></li>
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+                {{-- <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
                         <h6>Company</h6>
@@ -58,7 +58,7 @@
                             <li><a href="privacy.html">Terms</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->

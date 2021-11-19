@@ -33217,6 +33217,10 @@ ul {
   color: #2b2b2b;
 }
 
+.main-nav .navbar-nav .nav-item .nav-link {
+  color: #585858;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

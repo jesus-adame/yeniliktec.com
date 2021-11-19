@@ -4,17 +4,17 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
                     <div class="block">
-                        <a href="index.html"><img src="/theme/images/logo-alt.png" alt="footer-logo"></a>
+                        <a href="/"><img src="/theme/images/logo_blanco_yeniliktec.png" alt="footer-logo"></a>
                         <!-- Social Site Icons -->
                         <ul class="social-icon list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/themefisher"><i class="ti-facebook"></i></a>
+                                <a href="https://www.facebook.com/yeniliktec" target="_blank"><em class="ti-facebook"></em></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://twitter.com/themefisher"><i class="ti-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/yeniliktec/" target="_blank"><em class="ti-linkedin"></em></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.instagram.com/themefisher/"><i class="ti-instagram"></i></a>
+                                <a href="https://www.instagram.com/yeniliktec/?hl=es-la" target="_blank"><em class="ti-instagram"></em></a>
                             </li>
                         </ul>
                     </div>
@@ -22,28 +22,28 @@
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Product</h6>
+                        <h6>Servicios</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="team.html">Teams</a></li>
-                            <li><a href="blog.html">Blogs</a></li>
-                            <li><a href="FAQ.html">FAQs</a></li>
+                            <li><a href="/marketing-digital">Marketing digital</a></li>
+                            <li><a href="/sitios-web">Sitios Web</a></li>
+                            {{-- <li><a href="FAQ.html">FAQs</a></li> --}}
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Resources</h6>
+                        <h6>Acceso</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="sign-up.html">Singup</a></li>
-                            <li><a href="sign-in.html">Login</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Singup</a></li>
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+                {{-- <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
                         <h6>Company</h6>
@@ -55,17 +55,17 @@
                             <li><a href="privacy.html">Terms</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Company</h6>
+                        <h6>Compañia</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            {{-- <li><a href="about.html">Nosotros</a></li> --}}
+                            <li><a href="{{ route('contact') }}">Contacto</a></li>
+                            <li><a href="{{ route('about') }}">Equipo</a></li>
+                            <li><a href="{{ route('terms.show') }}">Politica de privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,8 +73,8 @@
         </div>
     </div>
     <div class="text-center text-light bg-dark py-4">
-        <script>
-            document.write(new Date().getFullYear())
-        </script>. Designed &amp; Developed by <a href="https://yeniliktec.com/">Yeniliktec</a></small class="text-secondary">
+        </small  class="text-secondary">{{ date('Y') }} Designed &amp; Developed by <a href="https://yeniliktec.com/">Yeniliktec &copy;</a></small>
     </div>
 </footer>
+
+@include('shared.new-scripts')

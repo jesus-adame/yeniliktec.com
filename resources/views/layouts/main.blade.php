@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="robots" content="noindex, nofollow"/>
+        @yield('meta')
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -30,7 +31,9 @@
         @endproduction
     </head>
     <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+        
         @yield('content')
+
         {{-- whatsapp --}}
         <a
             class="z-20 py-3 p-3 rounded-full bg-green-500 hover:bg-green-600 fixed bottom-8 right-9 outline-none flex items-center content-center"

@@ -9,7 +9,7 @@
         <div class="container">
             <div class="rounded shadow p-5 bg-white">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                    <article class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
                         <em class="ti-desktop text-primary h1"></em>
                         <h3 class="mt-4 text-capitalize h5 ">Desarrollo Web</h3>
                         <ul class="text-decoration-none list-unstyled">
@@ -19,8 +19,8 @@
                             <li>Blogs</li>
                             <li>Sistemas web</li>
                         </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                    </article>
+                    <article class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
                         <em class="ti-announcement text-primary h1"></em>
                         <h3 class="mt-4 text-capitalize h5 ">Marketing Digital</h3>
                         <ul class="text-decoration-none list-unstyled">
@@ -30,15 +30,15 @@
                             <li>Comunity Manager</li>
                             <li>Generación de contactos</li>
                         </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+                    </article>
+                    <article class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
                         <em class="ti-thought text-primary h1"></em>
                         <h3 class="mt-4 text-capitalize h5 ">Analítica Web</h3>
                         <p class="regular text-muted">
                             El servicio de analítica web que través de metodologías y frameworks recopilará datos fundamentales de tus productos e inversiones publicitarias,
                             esto servirá para medir de manera real y concreta la efectividad.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -48,13 +48,13 @@
       =            Feature Grid            =
       ===================================-->
     <section class="feature section pt-0">
-        <div class="container">
+        <article class="container">
             <div class="row">
                 <div class="col-lg-6 ml-auto justify-content-center">
                     <!-- Feature Mockup -->
-                    <div class="image-content" data-aos="fade-right">
+                    <figure class="image-content" data-aos="fade-right">
                         <img class="img-fluid" src="/images/content-marketing.png" alt="iphone">
-                    </div>
+                    </figure>
                 </div>
                 <div class="col-lg-6 mr-auto align-self-center">
                     <div class="feature-content">
@@ -82,10 +82,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 
-    <div class="mx-auto px-5">
+    <section class="mx-auto px-5">
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -125,10 +125,10 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="feature section pt-10">
-        <div class="container">
+        <article class="container">
             <div class="row">
                 <div class="col-lg-6 ml-auto align-self-center">
                     <div class="feature-content">
@@ -158,12 +158,12 @@
                 </div>
                 <div class="col-lg-6 mr-auto justify-content-center">
                     <!-- Feature mockup -->
-                    <div class="image-content" data-aos="fade-left">
+                    <figure class="image-content" data-aos="fade-left">
                         <img class="img-fluid" src="/images/mockup-pc.png" alt="ipad">
-                    </div>
+                    </figure>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
     <!--====  End of Feature Grid  ====-->
 
@@ -174,7 +174,7 @@
     @include('shared.footer')
 
     <!-- To Top -->
-    <div class="scroll-top-to" style="left: 20px; right: auto">
+    <div class="scroll-top-to">
         <i class="ti-angle-up"></i>
     </div>
 @endsection
@@ -197,5 +197,14 @@
         }
 		new Splide('.splide', config).mount();
 	});
+
+    document.addEventListener('click', () => {
+        let scrollToTop = document.querySelector('.scroll-to-top');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+    });
+    
 </script>
 @endpush

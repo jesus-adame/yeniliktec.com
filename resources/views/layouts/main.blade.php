@@ -4,7 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="robots" content="noindex, nofollow"/>
+        <meta name="author" content="yeniliktec.com" />
+        <meta name="description" content="{{ config('app.name') }}" />
+        <meta name="keywords" content="diseño web,marketing digital,sistemas web,ERP,campañas google,campañas facebook,eccomerse wordpress" />
+        <meta name="robots" content="index,follow" />
+        <meta name="geo.region" content="MX" />
+        <meta name="geo.placename" content="Mexico" />
+        <meta name="DC.type" content="website" />
+        <meta name="DC.audience" content="b2b" />
         @yield('meta')
 
         <title>{{ config('app.name', 'Laravel') }}</title>

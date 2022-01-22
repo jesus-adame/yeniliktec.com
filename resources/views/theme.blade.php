@@ -1,10 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
+    <div id="scrollTop"></div>
     @include('shared.navbar')
 
     @include('shared.slider')
-
+        
     <section class="section pt-0 relative pull-top">
         <div class="container">
             <div class="rounded shadow p-5 bg-white">
@@ -139,7 +140,7 @@
                         <!-- Feature Description -->
                         <p>
                             Creamos páginas web que te servirán para tener la infraestructura necesaria para conseguir clientes en línea,
-                            de esta manera podrás ir escalando tu negocio de manera exponencial. Podemos desarrollar cualquier idea que tengas en mente. 
+                            de esta manera podrás ir escalando tu negocio de manera exponencial. Podemos desarrollar cualquier idea que tengas en mente.
                         </p>
                     </div>
                     <!-- Testimonial Quote -->
@@ -198,13 +199,5 @@
 		new Splide('.splide', config).mount();
 	});
 
-    document.addEventListener('click', () => {
-        let scrollToTop = document.querySelector('.scroll-to-top');
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-    });
-    
 </script>
 @endpush

@@ -8,7 +8,7 @@
     once: true
   });
 
-  
+
   $(window).on('scroll', function () {
 		//.Scroll to top show/hide
     var scrollToTop = $('.scroll-top-to'),
@@ -19,13 +19,14 @@
       scrollToTop.fadeOut(100);
     }
   });
-	// scroll-to-top
-  $('.scroll-top-to').on('click', function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
+  //scroll to top
+  $(document).ready(function (){
+    $(".scroll-top-to").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#scrollTop").offset().top
+        }, 1000);
+    });
+});
 
   $(document).ready(function() {
 

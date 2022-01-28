@@ -27,6 +27,7 @@
                         <ul>
                             <li><a href="/marketing-digital">Marketing digital</a></li>
                             <li><a href="/sitios-web">Sitios Web</a></li>
+                            <li><a href="https://9614c79c.sibforms.com/serve/MUIEABc83YZ8tPu7_o1foOthzImFEHqAWAZyOMiEtJf_u86yf5Gk8F_b8f5Ope_w2wMBRQACkhKkW5Kjsr08z7OLYyiiYnbb9Tfu0laXsKbHzIf0syVfCRoPAZupa_2vcf6hgs0oUPvfjCHNY93PkKpSmYG-jfgOiIjK-XcDOxrKvh2iYb2q39_8XhdqW0S3zykDeyVNoYfFl0_9">Newsletter</a></li>
                             {{-- <li><a href="FAQ.html">FAQs</a></li> --}}
                         </ul>
                     </div>

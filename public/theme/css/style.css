@@ -16,22 +16,19 @@ FACEBOOK: https://www.facebook.com/themefisher
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-.body-wrapper {
-  /*Agregar scroll-spy*/
-  position: relative;
-  height: auto;
-  overflow-y: scroll;
-  overflow-x: hidden;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+h1, h2 {
+  font-family: 'Space Mono';
+}
+
+h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   color: #000;
   font-weight: 300;
 }
@@ -459,6 +456,16 @@ button:focus,
   top: 0;
   left: 20%;
 }
+.main-nav .navbar-nav .nav-link:before:nth-last-child(1) {
+  content: '';
+  background: #1b509b;
+  width: 60%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+
+}
 
 @media (max-width: 992px) {
   .main-nav .navbar-nav .nav-item.active .nav-link:before {
@@ -607,7 +614,7 @@ button:focus,
 }
 
 .footer-main .block img #small-Apps {
-  fill: red;
+  fill: red; 
 }
 
 .footer-main .block ul.social-icon li a {

@@ -26,6 +26,9 @@
         <link rel="stylesheet" href="/theme/plugins/fancybox/jquery.fancybox.min.css">
         <link rel="stylesheet" href="/theme/plugins/aos/aos.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
         <!-- CUSTOM CSS -->
         <link href="/theme/css/style.css" rel="stylesheet">
 

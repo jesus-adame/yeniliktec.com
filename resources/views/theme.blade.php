@@ -1,11 +1,12 @@
 @extends('layouts.main')
 
 @section('content')
+    <div id="scrollTop"></div>
     @include('shared.navbar')
 
     @include('shared.slider')
-
-    <section class="section pt-0 relative pull-top">
+        
+    <section class="section pt-0 pb-5 relative pull-top">
         <div class="container">
             <div class="rounded shadow p-5 bg-white">
                 <div class="row">
@@ -45,47 +46,9 @@
     </section>
 
     <!--==================================
-      =            Feature Grid            =
+      =            Feature            =
       ===================================-->
-    <section class="feature section pt-0">
-        <article class="container">
-            <div class="row">
-                <div class="col-lg-6 ml-auto justify-content-center">
-                    <!-- Feature Mockup -->
-                    <figure class="image-content" data-aos="fade-right">
-                        <img class="img-fluid" src="/images/content-marketing.png" alt="iphone">
-                    </figure>
-                </div>
-                <div class="col-lg-6 mr-auto align-self-center">
-                    <div class="feature-content">
-                        <!-- Feature Title -->
-                        <h2>
-                            Marketing Digital
-                        </h2>
-                        <!-- Feature Description -->
-                        <p class="desc">
-                            Con nuestros servicios de creación de estrategias publicitarias en marketing digital podrás tener el control de los recursos que inviertes en redes sociales y más,
-                            contamos con expertos que te ayudarán desde el análisis hasta la ejecución de tu plan de marketing.
-                        </p>
-                    </div>
-                    <!-- Testimonial Quote -->
-                    <div class="testimonial">
-                        <p>
-                            "Una caracteristica de los negocios éxitosos, es que cuentan con un grupo de expertos que los asesoran."
-                        </p>
-                        <ul class="list-inline flex meta align-items-center mt-2">
-                            <li class="list-inline-item">
-                                <img src="/images/personal/luis-figueroa.png" alt="Luis A. Figueroa">
-                            </li>
-                            <li class="list-inline-item">Luis A. Figueroa, Digital Marketer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <section class="mx-auto px-5">
+      <section class="mx-auto px-5">
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -126,8 +89,44 @@
             </div>
         </div>
     </section>
-
-    <section class="feature section pt-10">
+    <section class="feature section pb-2 pt-5">
+        <article class="container">
+            <div class="row">
+                <div class="col-lg-6 ml-auto justify-content-center">
+                    <!-- Feature Mockup -->
+                    <figure class="image-content" data-aos="fade-right">
+                        <img class="img-fluid" src="/images/content-marketing.png" alt="marketing">
+                    </figure>
+                </div>
+                <div class="col-lg-6 mr-auto align-self-center">
+                    <div class="feature-content">
+                        <!-- Feature Title -->
+                        <h2>
+                            Marketing Digital
+                        </h2>
+                        <!-- Feature Description -->
+                        <p class="desc">
+                            Con nuestros servicios de creación de estrategias publicitarias en marketing digital podrás tener el control de los recursos que inviertes en redes sociales y más,
+                            contamos con expertos que te ayudarán desde el análisis hasta la ejecución de tu plan de marketing.
+                        </p>
+                    </div>
+                    <!-- Testimonial Quote -->
+                    <div class="testimonial">
+                        <p>
+                            "Una caracteristica de los negocios éxitosos, es que cuentan con un grupo de expertos que los asesoran."
+                        </p>
+                        <ul class="list-inline flex meta align-items-center mt-2">
+                            <li class="list-inline-item">
+                                <img src="/images/personal/luis-figueroa.png" alt="Luis A. Figueroa">
+                            </li>
+                            <li class="list-inline-item">Luis A. Figueroa, Digital Marketer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="feature section py-2">
         <article class="container">
             <div class="row">
                 <div class="col-lg-6 ml-auto align-self-center">
@@ -139,7 +138,7 @@
                         <!-- Feature Description -->
                         <p>
                             Creamos páginas web que te servirán para tener la infraestructura necesaria para conseguir clientes en línea,
-                            de esta manera podrás ir escalando tu negocio de manera exponencial. Podemos desarrollar cualquier idea que tengas en mente. 
+                            de esta manera podrás ir escalando tu negocio de manera exponencial. Podemos desarrollar cualquier idea que tengas en mente.
                         </p>
                     </div>
                     <!-- Testimonial Quote -->
@@ -159,8 +158,45 @@
                 <div class="col-lg-6 mr-auto justify-content-center">
                     <!-- Feature mockup -->
                     <figure class="image-content" data-aos="fade-left">
-                        <img class="img-fluid" src="/images/mockup-pc.png" alt="ipad">
+                        <img class="img-fluid rounded" src="/images/desarrollo-web.png" alt="desarrollo web">
                     </figure>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="feature section py-2">
+        <article class="container">
+            <div class="row">
+                <div class="col-lg-6 ml-auto justify-content-center">
+                    <!-- Feature Mockup -->
+                    <figure class="image-content" data-aos="fade-right">
+                        <img lazy="load" class="img-fluid" src="/images/analitica-web.png" alt="analytics">
+                    </figure>
+                </div>
+                <div class="col-lg-6 mr-auto align-self-center">
+                    <div class="feature-content">
+                        <!-- Feature Title -->
+                        <h2>
+                            Analitica Web
+                        </h2>
+                        <!-- Feature Description -->
+                        <p class="desc">
+                            Con nuestros servicios de creación de estrategias publicitarias en marketing digital podrás tener el control de los recursos que inviertes en redes sociales y más,
+                            contamos con expertos que te ayudarán desde el análisis hasta la ejecución de tu plan de marketing.
+                        </p>
+                    </div>
+                    <!-- Testimonial Quote -->
+                    <div class="testimonial">
+                        <p>
+                            "Como compredemos la importancia del crecimiento en el negocio es fundamental y para ello las metricas son nuestras aliadas."
+                        </p>
+                        <ul class="list-inline flex meta align-items-center mt-2">
+                            <li class="list-inline-item">
+                                <img src="/images/personal/luis-figueroa.png" alt="Luis A. Figueroa">
+                            </li>
+                            <li class="list-inline-item">Luis A. Figueroa, Digital Marketer</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </article>
@@ -198,13 +234,5 @@
 		new Splide('.splide', config).mount();
 	});
 
-    document.addEventListener('click', () => {
-        let scrollToTop = document.querySelector('.scroll-to-top');
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-    });
-    
 </script>
 @endpush

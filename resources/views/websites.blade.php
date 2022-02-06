@@ -3,7 +3,7 @@
 @section('title', 'Desarrollo Web - YenilikTec')
 
 @section('meta')
-    <meta name="description" content="Ofecemos servicios profecionales de Diseño Web, creación de landing pages, e-commerce, sistemas web y más."/>
+    <meta name="description" content="Ofrecemos servicios profesionales de Diseño Web, creación de landing pages, e-commerce, sistemas web y más."/>
     <meta name="keywords" content="Páginas web, Sistemas Web, Landig Pages, e-commerce"/>
     <meta name="robots" content="index, follow"/>
 @endsection
@@ -12,12 +12,12 @@
     @include('shared.navbar')
     @include('components.breadcrumb')
 
-    <div class="container mx-auto my-10">
-        <div class="service">
+    <main class="container mx-auto my-10">
+        <article class="service">
             <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
-                <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/web-design.png" alt="Diseño web" width="70%">
-                </div>
+                <figure class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                    <img loading="lazy" class="mx-auto rounded-lg" src="/images/web-design.png" alt="Diseño web" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 mb-4 font-bold">Diseño Web</h3>
                     <p class="text-xl text-justify">
@@ -30,12 +30,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
             <div class="flex flex-wrap my-5 mx-4 items-center justify-around md:flex-row-reverse">
-                <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
-                    <img class="mx-auto" src="/images/thank-you.png" alt="Landing page" width="70%">
-                </div>
+                <figure class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/thank-you.png" alt="Landing page" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 mb-4 font-bold">Landing Page</h3>
                     <p class="text-xl text-justify">
@@ -44,12 +44,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
             <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
-                <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
-                    <img class="mx-auto" src="/images/website.png" alt="Websites" width="70%">
-                </div>
+                <figure class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/website.png" alt="Websites" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 mb-4 font-bold">Páginas Web</h3>
                     <p class="text-xl text-justify">
@@ -62,12 +62,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
             <div class="flex flex-wrap my-5 mx-4 items-center justify-around md:flex-row-reverse">
-                <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="E-commerce" width="70%">
-                </div>
+                <figure class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                    <img loading="lazy" class="mx-auto rounded-lg" src="/images/ecommerce.png" alt="E-commerce" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 mb-4 font-bold">E-commerce</h3>
                     <p class="text-xl mb-4 text-justify">
@@ -83,12 +83,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
             <div class="flex flex-wrap my-5 mx-4 items-center justify-around">
-                <div class="thumb w-full mb-8 md:mb-0 md:w-1/2">
-                    <img class="mx-auto" src="/images/sistemas-web.png" alt="Sistemas Web" width="70%">
-                </div>
+                <figure class="thumb w-full mb-8 md:mb-0 md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/sistemas-web.png" alt="Sistemas Web" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 mb-4 font-bold">Sistemas Web</h3>
                     <p class="text-xl text-justify">
@@ -105,12 +105,12 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="w-full text-center my-5">
             <a id="whats-web-development" href="https://wa.me/+525518040335" target="_blank" rel="nofollow"
                 class="bg-blue-900 hover:bg-blue-800 text-white py-3 px-9 mx-auto rounded">SOLICITAR INFORMACIÓN</a>
         </div>
-    </div>
+    </main>
     
     @include('shared.footer')
 @endsection

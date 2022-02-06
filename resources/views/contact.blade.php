@@ -81,10 +81,10 @@
                         data-action='submit'>Enviar</button>
                 </form>
             </div>
-            <div class="w-full md:w-1/2 mb-5 rounded-md overflow-hidden">
+            <map class="w-full md:w-1/2 mb-5 rounded-md overflow-hidden">
                 <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8092710947944!2d-99.24470158548607!3d18.93983456116105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf2b4feaa1b7%3A0xcce9bbd77d53f705!2sYeniliktec%20Agencia%20Digital!5e0!3m2!1ses-419!2smx!4v1626322467205!5m2!1ses-419!2smx" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            </map>
         </div>
     </div>
 

@@ -1,4 +1,5 @@
 <footer>
+
     <div class="footer-main">
         <div class="container">
             <div class="row">
@@ -8,7 +9,7 @@
                         <!-- Social Site Icons -->
                         <ul class="social-icon list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/yeniliktec" target="_blank"><em class="ti-facebook"></em></a>
+                                <a href="https://www.facebook.com/yeniliktec" target="_blank"><em class="ti-facebook box-icon"></em></a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.linkedin.com/company/yeniliktec/" target="_blank"><em class="ti-linkedin"></em></a>
@@ -35,11 +36,11 @@
                 <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
                     <div class="block-2">
                         <!-- heading -->
-                        <h6>Acceso</h6>
+                        <h6>Contenido</h6>
                         <!-- links -->
                         <ul>
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Singup</a></li>
+                            {{-- <li><a href="{{ route('login') }}">Login</a></li> --}}
+                            {{-- <li><a href="{{ route('register') }}">Singup</a></li> --}}
                             <li><a href="{{ route('blog') }}">Blog</a></li>
                         </ul>
                     </div>
@@ -75,6 +76,9 @@
     </div>
     <div class="text-center text-light bg-dark py-4">
         </small  class="text-secondary">{{ date('Y') }} Designed &amp; Developed by <a href="https://yeniliktec.com/">Yeniliktec &copy;</a></small>
+    </div>
+    <div class="scroll-top-to">
+        <i class="ti-angle-up"></i>
     </div>
 </footer>
 

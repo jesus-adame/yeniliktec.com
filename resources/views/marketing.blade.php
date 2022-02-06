@@ -12,12 +12,12 @@
     @include('shared.navbar')
     @include('components.breadcrumb')
 
-    <div class="container mx-auto my-10">
-        <div class="service mb-3">
+    <main class="container mx-auto my-10">
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/socialmedia.png" alt="Social media" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Social Media Strategist</h3>
                     <p class="text-xl text-justify">
@@ -27,12 +27,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service mb-3">
+        </article>
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/undraw_design_tools.svg" alt="Branding and design" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Branding</h3>
                     <p class="text-xl text-justify">
@@ -43,12 +43,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service mb-3">
+        </article>
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/undraw_filter.svg" alt="Inbound Marketing" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Inbound Marketing</h3>
                     <p class="text-xl text-justify">
@@ -58,12 +58,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service mb-3">
+        </article>
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto rounded-lg" src="/images/community-manager.png" alt="Communty Manager" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Community Manager</h3>
                     <p class="text-xl text-justify">
@@ -73,12 +73,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service mb-3">
+        </article>
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto" src="/images/undraw_search_engines.svg" alt="Seo & Sem" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Posicionamiento SEO & SEM</h3>
                     <p class="text-xl text-justify">
@@ -88,12 +88,12 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="service mb-3">
+        </article>
+        <article class="service mb-3">
             <div class="flex flex-wrap my-4 mx-2 items-center justify-around md:flex-row-reverse">
-                <div class="thumb w-full md:w-1/2">
-                    <img class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="70%">
-                </div>
+                <figure class="thumb w-full md:w-1/2">
+                    <img loading="lazy" class="mx-auto rounded-lg" src="/images/google-analytics.png" alt="Analytics" width="70%">
+                </figure>
                 <div class="content w-full p-4 md:w-1/2">
                     <h3 class="text-blue-900 pb-4 font-bold">Analítica Web</h3>
                     <p class="text-xl text-justify">
@@ -107,13 +107,13 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </article>
         <br>
         <div class="w-full text-center my-5">
             <a id="info-marketing" href="https://wa.me/+525518040335" target="_blank" rel="nofollow"
                 class="bg-blue-900 hover:bg-blue-700 text-white py-3 px-8 font-bold mx-auto rounded">SOLICITAR INFORMACIÓN</a>
         </div>
-    </div>
+    </main>
 
     @include('shared.footer')
 @endsection

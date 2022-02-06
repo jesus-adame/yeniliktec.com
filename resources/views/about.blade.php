@@ -13,7 +13,7 @@
     @include('components.breadcrumb', ['title' => 'Quienes Somos'])
 
     <div class="container mx-auto my-10">
-        <div class="text-center">
+        <article class="text-center">
             <h2>Misión</h2>
             <p>
                 Nuestra misión es poder ayudar a
@@ -21,9 +21,9 @@
                 digital y así puedan expandirse de manera
                 exponencial
             </p>
-        </div>
+        </article>
         <br>
-        <div class="text-center">
+        <article class="text-center">
             <h2>Visión</h2>
             <p>
                 Ser un equipo de trabajo de alto rendimiento, 
@@ -32,16 +32,16 @@
                 por la evolución y desarrollo de los negocios de 
                 nuestros clientes.
             </p>
-        </div>
+        </article>
         <br><br>
         
         <h2 class="text-center">Nuestro equipo</h2>
         <br>
 
-        <div class="flex items-center mb-4">
-            <div class="w-24 rounded-full overflow-hidden">
-                <img class="w-full" src="/images/personal/jesus-adame.jpg" alt="Jesús Adame">
-            </div>
+        <article class="flex items-center mb-4">
+            <figure class="w-24 rounded-full overflow-hidden">
+                <img loading="lazy" class="w-full" src="/images/personal/jesus-adame.jpg" alt="Jesús Adame">
+            </figure>
             <div class="content w-3/4 px-4">
                 <h3>FULLSTACK WEB DEVELOPER - ASESOR DE TI</h3>
                 <p>
@@ -51,11 +51,11 @@
                     desarrollado proyectos de impacto directo en las organizaciones.
                 </p>
             </div>
-        </div>
-        <div class="flex items-center mb-4">
-            <div class="w-24 rounded-full overflow-hidden">
-                <img class="w-full" src="/images/personal/ruben-adame.png" alt="Rubén Adame">
-            </div>
+        </article>
+        <article class="flex items-center mb-4">
+            <figure class="w-24 rounded-full overflow-hidden">
+                <img loading="lazy" class="w-full" src="/images/personal/ruben-adame.png" alt="Rubén Adame">
+            </figure>
             <div class="content w-3/4 px-4">
                 <h3>DIGITAL MARKETER - WEB DEVELOPER</h3>
                 <p>
@@ -65,11 +65,11 @@
                     servicio con la mayor efectividad posible dentro de su mercado.
                 </p>
             </div>
-        </div>
+        </article>
         <div class="flex items-center mb-4">
-            <div class="w-24 rounded-full overflow-hidden">
-                <img class="w-full" src="/images/personal/luis-figueroa.png" alt="Luis Figueroa">
-            </div>
+            <figure class="w-24 rounded-full overflow-hidden">
+                <img loading="lazy" class="w-full" src="/images/personal/luis-figueroa.png" alt="Luis Figueroa">
+            </figure>
             <div class="content w-3/4 px-4">
                 <h3>DIGITAL MARKETER - WEB DEVELOPER</h3>
                 <p>

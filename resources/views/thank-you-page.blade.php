@@ -3,7 +3,7 @@
 @section('title', 'ThankYou - ' . $title)
 
 @section('meta')
-<meta name="robots" content="index, follow"/>
+<Meta name=”robots” content=”index,nofollow”/>
 @endsection
 
 @section('content')

@@ -19,7 +19,7 @@
                 <x-jet-nav-link href="/sitios-web" :active="request()->routeIs('websites')">
                     Desarrollo Web
                 </x-jet-nav-link>
-                <x-jet-nav-link href="/blog" :active="request()->routeIs('blog')">
+                <x-jet-nav-link href="/blog" :active="request()->routeIs('blog')"> 
                     Blog
                 </x-jet-nav-link>
                 <x-jet-nav-link href="/contacto" :active="request()->routeIs('contact')">
